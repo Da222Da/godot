@@ -20,7 +20,7 @@ git commit --no-verify -m 'deploy'
 
 # 如果 token 过期了，需要修改当前 origin => `git remote -v && git remote add origin url`
 git remote add origin "git@github.com:Da222Da/godot.git"
-git push -f -u origin gh-pages
+git push -f -u origin master:gh-pages
 
 
 
