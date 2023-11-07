@@ -6,12 +6,12 @@
 
 ::: -->
 
-<el-card class="box-card" header="Godot 引擎的安装演示：">
+<el-card class="box-card" header="Godot 引擎的安装说明：">
     <div>
         <div class="custom-container tip">
-            <p class="custom-container-title">演示说明: </p>
+            <p class="custom-container-title">提示: </p>
             <div>
-                <p>演示电脑的操作系统：Windows</p>
+                <p>我电脑的操作系统：Windows</p>
                 <p>我要下载的目标版本：Godot@3.x</p>
             </div>
         </div>
