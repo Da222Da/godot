@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "git add . & git commit -m 'deploy' & git push"
   },
   "keywords": [],
   "author": "",
