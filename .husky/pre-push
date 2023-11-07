@@ -7,7 +7,6 @@ set -e
 
 npm run build
 
-
 # 进入生成的文件夹
 cd "./docs/.vuepress/dist"
 
@@ -23,6 +22,5 @@ git remote add origin "git@github.com:Da222Da/godot.git"
 git push -f -u origin master:gh-pages
 
 
-
-rm -rf "./docs/.vuepress/dist"
-cd -npm run test
+cd "../"
+rm -rf "./dist"

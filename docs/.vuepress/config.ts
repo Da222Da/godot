@@ -6,6 +6,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "基于 Godot Engine 游戏开发",
   head: [["link", { rel: "icon", href: "favicon.ico" }]],
+  base: "/godot/",
   theme: defaultTheme({
     navbar,
     sidebar,
