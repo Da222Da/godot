@@ -1,12 +1,6 @@
-# 如何安装 Godot？
+# 如何安装 Godot 引擎？
 
-<!-- ::: danger BiliBili 喂饭教程
-
-<iframe id="myVideo" src="//player.bilibili.com/player.html?aid=952051050&amp;cid=&amp;page=&amp;high_quality=1&amp;danmaku=0&amp;as_wide=1" frameborder="0" scrolling="no" allow="autoplay" framespacing="0" allowfullscreen="" autoplay="autoplay" style="height: 300px; width: 100%; margin: 20px 0;"></iframe>
-
-::: -->
-
-<el-card class="box-card" header="Godot 引擎的安装说明：">
+<el-card class="box-card" header="安装 Godot 引擎的图文教程：">
     <div>
         <div class="custom-container tip">
             <p class="custom-container-title">提示: </p>
@@ -19,3 +13,5 @@
         <p> 等待片刻，你就会得要一个名为“Godot_v3.5.3-stable_win64.exe.zip”的压缩文件。然后，解压压缩包，得到一个名为 “Godot_v3.5.3-stable_win64” 的文件夹，打开该文件夹，你就能看到一个名为 “Godot_v3.5.3-stable_win64” 应用程序，点击运行即可。</p>
     </div>
 </el-card>
+
+<bilibili-tutorial :video-id="875871557"></bilibili-tutorial>

@@ -1,7 +1,5 @@
-# Godot 是什么？
+# 基于 Godot Engine 游戏开发
 
-Godot 是一个开源、免费、跨平台的游戏引擎，可以帮助我们轻松地开发 2D/3D 游戏。
+本站是为了介绍如何使用 **Godot 引擎** 进行游戏开发的。
 
-想要了解更多内容的话，请移步 [https://godotengine.org](https://godotengine.org)
-
-<bilibili-tutorial :video-id="278224723"></bilibili-tutorial>
+希望能够找到志同道合的小伙伴们，一起制作出有趣、有料、又好玩的游戏作品。
