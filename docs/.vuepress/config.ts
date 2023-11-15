@@ -8,6 +8,7 @@ export default defineUserConfig({
   head: [["link", { rel: "icon", href: "favicon.ico" }]],
   base: "/godot/",
   theme: defaultTheme({
+    logo: "/images/logo.png",
     navbar,
     sidebar,
     sidebarDepth: 1,

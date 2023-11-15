@@ -15,10 +15,10 @@ export default [
         text: "Element-plus",
         link: "https://element-plus.gitee.io/zh-CN/",
       },
-      {
-        text: "图标字符库emoji",
-        link: "https://www.webfx.com/tools/emoji-cheat-sheet/",
-      },
+      // {
+      //   text: "图标字符库emoji",
+      //   link: "https://www.webfx.com/tools/emoji-cheat-sheet/",
+      // },
     ],
   },
 ];
