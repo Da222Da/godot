@@ -1,6 +1,8 @@
 # 如何创建 Godot 项目？
 
-<el-card class="box-card" header="创建 Godot 项目的图文教程：">
+<bilibili-tutorial :video-id="578333856"></bilibili-tutorial>
+
+<!-- <el-card class="box-card" header="创建 Godot 项目的图文教程：">
 
 如果你想使用 Godot 引擎创建一个游戏项目，可以按照以下步骤操作：
 
@@ -10,6 +12,4 @@
 
 3. 最后，单击 **创建并编辑** 按钮，一个新的 Godot 项目就会被创建好。Godot 引擎还会自动跳转到可视化编辑界面，方便我们开发游戏内容。
 
-</el-card>
-
-<bilibili-tutorial :video-id="578333856"></bilibili-tutorial>
+</el-card> -->
