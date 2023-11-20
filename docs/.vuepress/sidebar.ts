@@ -22,5 +22,19 @@ export default {
                 // "scene/instantiate-scene.md",
             ],
         },
+        {
+            text: "GDScript 脚本",
+            children: [
+                "/script/",
+                "/script/node-script-relationship.md",
+                "/script/create-script.md",
+            ],
+        },
+        {
+            text: "输入处理",
+            children: [
+                "/input-handling/input-singleton.md",
+            ],
+        },
     ],
 };
