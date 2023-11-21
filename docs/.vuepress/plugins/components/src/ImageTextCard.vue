@@ -1,11 +1,11 @@
 <template>
-  <el-card header="图文教程：">
+  <el-card>
     <template #header>
       <div style="display: flex">
         <el-icon :size="20">
           <Notebook />
         </el-icon>
-        <span>图文教程</span>
+        <span>{{ title }}</span>
       </div>
     </template>
     <div class="image-text-card-content">
@@ -17,6 +17,12 @@
 <script>
 export default {
   name: "ImageTextCard",
+  props: {
+    title: {
+      type: String,
+      default: "图文教程"
+    }
+  }
 };
 </script>
 

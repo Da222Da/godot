@@ -37,6 +37,13 @@ export default {
             ],
         },
         {
+            text: "2D 图形",
+            children: [
+                // "/2D-graphics/",
+                "/2D-graphics/parallax-background.md",
+            ],
+        },
+        {
             text: "输入处理",
             children: [
                 "/input-handling/input-singleton.md",
