@@ -10,16 +10,17 @@ export default {
             children: [
                 "/quickstart/",
                 "/quickstart/install.md",
-                "/quickstart/project.md",
-                "/scene/create-scene.md",
+                // "/quickstart/project.md",
+                // "/scene-system/create-scene.md",
             ],
         },
         {
             text: "场景系统",
             children: [
-                "/scene/",
-                "/scene/create-scene.md",
+                "/scene-system/",
+                "/scene-system/create-scene.md",
                 // "scene/instantiate-scene.md",
+                "/scene-system/node-class.md",
             ],
         },
         {
@@ -28,6 +29,11 @@ export default {
                 "/script/",
                 "/script/node-script-relationship.md",
                 "/script/create-script.md",
+               {
+                text: "信号",
+                children: ["/script/signal.md", "/script/connect-signal.md",  "/script/custom-signal.md"]
+               },
+               "/script/group.md",
             ],
         },
         {

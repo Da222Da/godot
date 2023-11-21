@@ -20,13 +20,14 @@ GDScript 是 Godot 引擎**自定义的脚本语言**，它能够让我们游戏
     *  `do-while  循环`：用于在一个条件成立时执行代码块，然后再判断条件是否成立。
 - **函数**
     - `func` 申明函数
-    - 虚拟方法（Virtual Methods）<Badge text="VirtualMethods 是指可以在子类中被重写的方法。" />
-        - `_ready()`: 当节点第一次进入场景树时调用，往往用来设置节点的默认状态。
-        - `_process(delta)`: 每帧调用一次，delta 是自上一帧结束时到当前帧结束的时间间隔。
-        - `_input(event)`: 当节点接收到输入事件时，该函数会被调用。
-- **对象**
-    - 全局对象
-        - [Input Singleton](../input-handling/input-singleton.md) 用于检测和响应各种输入事件，包括键盘、鼠标、触摸屏、游戏手柄等.
+- **面向对象**
+    - `self 关键字` 表示获取当前节点。
+    - 内置类
+        - [Node 基类](../scene-system/node-class.md)，所有 Godot 场景对象的基类。
+        - [Input 单例类](../input-handling/input-singleton.md) 用于检测和响应各种输入事件，包括键盘、鼠标、触摸屏、游戏手柄等.
+- **特征**
+    - `$ 符号`，用于快速获取当前场景中的节点，例如`$Sprite、$Button`。
+        
 ::: danger 注意！
 
 每一个 GDScript 文件都代表着一个“子类”。
