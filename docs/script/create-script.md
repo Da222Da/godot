@@ -8,7 +8,7 @@
 
 </VideoCard>
 
-```gdscript
+<!-- ```gdscript
 extends Sprite2D
 
 var speed = 500
@@ -27,4 +27,4 @@ func _process(delta):
 	var velocity = direction * speed * delta;
 	position += velocity
 
-```
+``` -->
