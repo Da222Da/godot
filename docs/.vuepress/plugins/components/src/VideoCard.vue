@@ -4,7 +4,7 @@
       <div class="card-header">
         <span>{{ title }}</span>
         <a v-if="downloadLink" :href="downloadLink">
-          <el-button type="danger" text>
+          <el-button type="primary" text>
               下载素材<el-icon class="el-icon--right"><Download /></el-icon>
           </el-button>
         </a>

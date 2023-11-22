@@ -6,7 +6,7 @@ export default {
         },
         {
             text: "初识 Godot Engine",
-            collapsible: false,
+            collapsible: true,
             children: [
                 "/quickstart/",
                 "/quickstart/install.md",
@@ -16,6 +16,7 @@ export default {
         },
         {
             text: "场景系统",
+            collapsible: true,
             children: [
                 "/scene-system/",
                 "/scene-system/create-scene.md",
@@ -25,6 +26,7 @@ export default {
         },
         {
             text: "GDScript 脚本",
+            collapsible: true,
             children: [
                 "/script/",
                 "/script/node-script-relationship.md",
@@ -38,13 +40,22 @@ export default {
         },
         {
             text: "2D 图形",
+            collapsible: true,
             children: [
-                // "/2D-graphics/",
+                "/2D-graphics/",
+                "/2D-graphics/coordinate-system.md",
+                
+                { text: "二维向量", 
+                children: ["/2D-graphics/vector.md", "/2D-graphics/vector2.md"]
+                },
+                "/2D-graphics/camera2d.md",
+                "/2D-graphics/tilemap.md",
                 "/2D-graphics/parallax-background.md",
             ],
         },
         {
             text: "输入处理",
+            collapsible: true,
             children: [
                 "/input-handling/input-singleton.md",
             ],
