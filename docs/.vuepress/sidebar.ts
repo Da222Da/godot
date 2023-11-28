@@ -41,6 +41,7 @@ export default {
                 "/2D-graphics/",
                 "/2D-graphics/coordinate-system.md",
                 "/2D-graphics/vector.md", 
+                "/2D-graphics/vector2-operation.md",
                 "/2D-graphics/parallax-background.md",
                 "/2D-graphics/camera2d.md",
                 "/2D-graphics/tilemap.md",
