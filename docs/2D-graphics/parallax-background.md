@@ -1,4 +1,4 @@
-# 如何设置视差背景？
+# (TODO)如何设置视差背景？
 
 ::: tip 背景知识
 
@@ -14,13 +14,13 @@
 
 :::
 
-<VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/parallax_background.7z">
+<!-- <VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/parallax_background.7z">
 
 <template #content>
 <video-iframe :video-id="621037418"></video-iframe>
 </template>
 
-</VideoCard>
+</VideoCard> -->
 
 <!-- 
 脚本：

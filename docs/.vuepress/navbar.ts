@@ -1,10 +1,18 @@
 export default [
   {
+    text: "首页",
+    link: "/",
+  },
+  {
+    text: "游戏复刻",
+    link: "/game-copy/",
+  },
+  {
     text: "GitHub",
     link: "https://github.com/Da222Da/godot",
   },
   {
-    text: "第三方支持",
+    text: "文档支持",
     children: [
       {
         text: "游戏资源",
@@ -16,7 +24,7 @@ export default [
         ]
       },
       {
-        text: "文档支持",
+        text: "文档构建",
         children: [
           {
             text: "VuePress",

@@ -10,8 +10,6 @@ export default {
             children: [
                 "/quickstart/",
                 "/quickstart/install.md",
-                // "/quickstart/project.md",
-                // "/scene-system/create-scene.md",
             ],
         },
         {
@@ -43,8 +41,8 @@ export default {
                 "/2D-graphics/vector.md", 
                 "/2D-graphics/vector2-operation.md",
                 "/2D-graphics/parallax-background.md",
-                "/2D-graphics/camera2d.md",
                 "/2D-graphics/tilemap.md",
+                "/2D-graphics/camera2d.md",
             ],
         },
         {
@@ -66,19 +64,28 @@ export default {
             ]
         },
         {
-            text: "附录",
+            text: "附录A: GDScript 脚本语法",
+            link:"/appendix/gdscript-grammar.md"
+        },
+        // {
+        //     text: "附录B: Godot 配置说明",
+        //     link:"/appendix/project-config.md"
+        // },
+        {
+            text: "附录B: 内置模块 ",
+            link: "/appendix/build-in-module.md",
             collapsible: true,
             children: [
-                "/appendix/gdscript-grammar.md", 
-                {
-                    text: "内置模块",
-                    link: "/appendix/build-in-module.md",
-                    children: [
-                        "/appendix/modules/node.md",
-                    ]
-                },
-                "/appendix/project-config.md", 
+                "/appendix/modules/node.md",
             ]
         },
+       
     ],
+    "/game-copy/": [
+        {
+            text: "简介",
+            link:"/game-copy/"
+        },
+        "/game-copy/space-shooter.md",
+    ]
 };

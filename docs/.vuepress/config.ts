@@ -12,5 +12,6 @@ export default defineUserConfig({
     navbar,
     sidebar,
     sidebarDepth: 1,
+    contributors: false
   }),
 });
