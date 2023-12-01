@@ -18,7 +18,6 @@ export default {
             children: [
                 "/scene-system/",
                 "/scene-system/create-scene.md",
-                // "scene/instantiate-scene.md",
             ],
         },
         {
@@ -45,13 +44,12 @@ export default {
                 "/2D-graphics/camera2d.md",
             ],
         },
-        {
-            text: "输入处理",
-            collapsible: true,
-            children: [
-                "/input-handling/input-singleton.md",
-            ],
-        },
+        // {
+        //     text: "输入处理",
+        //     collapsible: true,
+        //     children: [
+        //     ],
+        // },
         {
             text: "物理系统",
             collapsible: true,
@@ -77,9 +75,11 @@ export default {
             collapsible: true,
             children: [
                 "/appendix/modules/node.md",
+                "/appendix/modules/input-singleton.md",
+                "/appendix/modules/vector2.md",
+                "/appendix/modules/packedScene.md",
             ]
         },
-       
     ],
     "/game-copy/": [
         {
