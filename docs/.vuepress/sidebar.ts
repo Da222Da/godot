@@ -76,6 +76,7 @@ export default {
             children: [
                 "/appendix/modules/node.md",
                 "/appendix/modules/input-singleton.md",
+                "/appendix/modules/area2d.md",
                 "/appendix/modules/vector2.md",
                 "/appendix/modules/packedScene.md",
             ]

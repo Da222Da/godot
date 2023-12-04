@@ -1,7 +1,33 @@
-# （TODO）如何监测物体之间的碰撞？
+# 如何检测物体之间的碰撞？
 
-Area2D 用于检测受物理影响的 2D 区域，例如：
+#### 2D 物体
 
-- 你将 Area2D 节点添加到场景中，并定义了一块区域。当其他物体进入或离开该区域时，可以触发相应的事件。这些事件可以包括进入区域、离开区域、与区域内的物体发生碰撞等。 
-- Area2D 节点可以与其他节点（如物体、角色等）一起使用，以实现各种功能。例如，您可以将Area2D节点与碰撞形状一起使用，以检测与其相交的物体的碰撞。
-- Area2D 节点可以用来检测角色是否进入某个区域，然后触发相应的游戏逻辑。 
+在 Godot 中，如果你想检测 2D 物体之间碰撞的话！可以使用 Area2D 区域节点，来定义碰撞对象检测区域。示例如下：
+
+- 单一节点示例：
+
+```gdscript
+extends Area2D
+
+# 进入碰撞区域时调用
+func _on_Area2D_body_entered(body):
+    # body是进入碰撞区域的对象
+    print("进入碰撞区域：", body.name)
+```
+
+- 分组节点示例：
+
+```gdscript
+extends Area2D
+
+# 进入碰撞区域时调用
+func _on_Area2D_body_entered(body):
+    # 这里的 enemy，是对敌人节点进行分组，因为敌人可能是史莱姆、哥布林……
+    if body.is_in_group("enemy"):
+        print("敌人进入碰撞区域")
+
+# 离开碰撞区域时调用
+func _on_Area2D_body_exited(body):
+    if body.is_in_group("enemy"):
+        print("敌人离开碰撞区域")
+```

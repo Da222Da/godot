@@ -9,6 +9,8 @@
 
 :::
 
+#### 语法约定
+
 - **变量**
     - `var 关键字` 申明一个变量 
     - `const 关键字` 申明一个常量
@@ -33,8 +35,17 @@
         - `randf_range(from, to)` 返回 from 和 to（包含）之间的随机浮点值。
 - **面向对象**
     - `self 关键字` 表示获取当前节点。
-- **场景**
+
+
+
+#### 语法特性 
+
+- **场景与节点**
     - `$ 符号`，根据节点名称，快速地获取当前场景中的节点，例如`$Sprite、$Button`。
+    - 信号
+        - `signal 关键字`，自定义信号，例如`signal destroyed`
+        - `emit_signal() 函数`，发送信号，例如`emit_signal("destroyed")`
+        - `Signal.connect() 函数`，监听信号，例如`$player.destroyed.connect(callback)`
 - **资源**
     - `preload(path)` 预加载，在脚本解析时，加载文件。例如`preload("res://diamond.tscn")`
         
