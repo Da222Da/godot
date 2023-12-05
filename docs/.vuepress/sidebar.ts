@@ -40,12 +40,18 @@ export default {
                 "/2D-graphics/vector.md", 
                 "/2D-graphics/vector2-operation.md",
                 "/2D-graphics/parallax-background.md",
-                "/2D-graphics/tilemap.md",
-                "/2D-graphics/camera2d.md",
+                // "/2D-graphics/tilemap.md",
+                // "/2D-graphics/camera2d.md",
             ],
         },
         // {
-        //     text: "输入处理",
+        //     text: "处理用户输入",
+        //     collapsible: true,
+        //     children: [
+        //     ],
+        // },
+        // {
+        //     text: "构建用户界面",
         //     collapsible: true,
         //     children: [
         //     ],
@@ -62,25 +68,14 @@ export default {
             ]
         },
         {
-            text: "附录A: GDScript 脚本语法",
+            text: "附录: GDScript 脚本语法",
+            collapsible: true,
             link:"/appendix/gdscript-grammar.md"
         },
         // {
         //     text: "附录B: Godot 配置说明",
         //     link:"/appendix/project-config.md"
         // },
-        {
-            text: "附录B: 内置模块 ",
-            link: "/appendix/build-in-module.md",
-            collapsible: true,
-            children: [
-                "/appendix/modules/node.md",
-                "/appendix/modules/input-singleton.md",
-                "/appendix/modules/area2d.md",
-                "/appendix/modules/vector2.md",
-                "/appendix/modules/packedScene.md",
-            ]
-        },
     ],
     "/game-copy/": [
         {

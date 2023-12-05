@@ -30,6 +30,7 @@
         - 周期性地自动生成小行星
             - 在主场景下，添加脚本 main.gd
             - 在主场景下，添加定时器 asteroid_timer，并将其设置为 autostart，然后，监听定时器信号 timeout，当定时器超时时，自动生成小行星。
+        - 给 asteroid 根节点，添加一个分组 asteroid（因为小行星会有很多个）
 3. 结束游戏
     - 创建爆炸场景 explosion.tscn
         1. 创建一个 Sprite2D 节点作为根节点，将其命名为“explosion”，并为其指定“explosion.png”图像。
@@ -40,15 +41,15 @@
         2. 在飞船脚本 player 中，添加 area_entered 进入信号，飞船与小行星碰撞时，删除飞船，引用爆炸场景，制作效果。
     - 显示游戏结束 UI
         1. 创建游戏结束 UI
-            - 为主场景添加一个CanvasLayer子节点，命名为“ui”
+            - 为主场景添加一个 CanvasLayer 子节点，命名为“ui”
             - 然后，添加一个 Label 子节点，命名为“end”，将text属性值更改为“游戏结束 \n - 按 Enter 回车键，重新开始 - \n - 按 Esc 键，退出游戏 -”,并将内容居中显示。
-            - 导入字体资源文件，选中 end 节点，在“检视器”下拉，找到Theme Overrides分组下的fonts，选择快速加载文件。
-            - 找到Colors分组下的font_color （字体颜色）和font_color_shadow（字体阴影颜色）属性，请择你喜欢的颜色，或分别输入域十六进制代码6fffbb（青色）和2f1f47（深紫色）。
+            - 导入字体资源文件，选中 end 节点，在“检视器”下拉，找到 Theme Overrides 分组下的 fonts，选择快速加载文件。
+            - 找到 Colors 分组下的 font_color（字体颜色）和 font_color_shadow（字体阴影颜色）属性，请择你喜欢的颜色，或分别输入域十六进制代码6fffbb（青色）和2f1f47（深紫色）。
             - 最后，默认状态下隐藏。
         2. 在 player 脚本中，自定义飞船被摧毁的信号 destroyed，当飞船与小行星碰撞时，发送飞船被摧毁信号。
         3. 在主场景中，添加脚本 main.gd，监听飞船被摧毁信号，当飞船被摧毁时，显示游戏结束 UI。
-    - 添加手动结束游戏功能
-    - 添加重新开始功能功能
+    - 按住 Esc 键，手动退出游戏。
+    - 在游戏结束状态下，按住 Enter 键，重新开始游戏。
 4. 让飞船发射激光
     - 添加得分记录
 5. 游戏打包
