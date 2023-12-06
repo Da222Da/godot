@@ -51,6 +51,24 @@
     - 按住 Esc 键，手动退出游戏。
     - 在游戏结束状态下，按住 Enter 键，重新开始游戏。
 4. 让飞船发射激光
-    - 添加得分记录
+    - 创建激光场景
+        1. 创建一个Area2D节点作为根节点，将其改名为“shot”，并将其放入“shot”组中（由于激光有很多）。
+        2. 为shot创建一个AnimatedSprite子节点。为其新建SpriteFrames资源,并添加“shot1.png”和“shot2.png”作为帧，并勾选Playing。
+        3. 为shot创建一个CollisionShape2D子节点。将其形状设为一个RectangleShape2D，然后调节碰撞矩形，使其覆盖激光精灵图。
+    - 创建激光脚本 shot.gd，实现子弹发射后不停向右移动
+    - 让飞船发射激光
+        1. 在 player 脚本中，预加载激光场景 shot.tscn，再监听空格键是否被按下。从而主场景中实例化激光。
+        2. 限制激光不能连续射击（即在发射激光后，需要等待一段时间才能再次射击）。
+            - 在 player 场景中，创建一个 Timer 子节点，改名为 “shot_wait_timer"，并将 Wait Time 设置为 0.2 s && One Shot 设置为 true（表示定时器在指定时间过去后只会触发一次）。
+            - 然后，在 player 脚本中，当发射子弹的空格键被按下时，将标记变量 is_shoot 设置为 false(表示不能在射击了),并启动 shot_wait_timer 定时器，再监听 shot_wait_timer 节点的 timeout 信号，当 timeout 信号被触发后，将 is_shoot 改为 true（表示可以射击了）。
+        3. 同时发射两束激光。
+    - 击碎陨石
+        1. 将 shot 节点的 area_entered 信号连接到 shot.gd 脚本，用于检测激光是否击中陨石。如果激光区域与陨石区域发生了碰撞，就调用 queue_free() 函数，删除自己。
+        2. 在 asteroid.gd 脚本中，修改 area_entered 信号的触发函数，新增激光与飞船碰撞情况。
+    - 添加得分记录功能
+        - 选中 main 主场景，添加一个Label节点，改名为“score”。并将其text属性设置为“分数:0”，并修改文字颜色【font_color （字体颜色）6fffbb（青色）和font_color_shadow（字体阴影颜色）2f1f47（深紫色）】与字体。
+        - 在 asteroid.gd 脚本中，定义 score 信号，并修改 area_entered 信号的触发函数，判断是否激光与行星碰撞，如果碰撞，就发送 score 信号。
+        - 在 main.gd 脚本中，监听 asteroid 脚本的 score 信号，当 asteroid 发射 asteroid 信号，将分数节点的内容 +1。
+        - 解决两束激光同时击中陨石时，加了两分的问题。
 5. 游戏打包
 -->
