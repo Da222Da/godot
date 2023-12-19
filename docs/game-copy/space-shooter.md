@@ -1,5 +1,9 @@
 # 太空射手
 
+<a href="/godot/zips/太空射手.zip">
+    <el-button type="primary" plain>游戏素材下载</el-button>
+</a>
+
 这是一个简单的 2D 射击类游戏（PC 端），玩家将控制一艘宇宙飞船并射击即将到来的小行星。游戏会记录你击落的小行星数量，并在小行星与你的飞船碰撞时结束。具体的游戏规则设计如下：
 
 - 宇宙飞船由方向键控制，按空格键可以发射激光。
@@ -48,6 +52,11 @@ var asteroid_instance = asteroid.instantiate()
 视频脚本：
 
 0. 简介
+    - 今天我们来开一个新坑，
+    - 我们将从零实现一个电脑端的 2D 射击类游戏，
+    - 玩家将控制一艘宇宙飞船并射击即将到来的小行星。
+    - 游戏会记录你击落的小行星数量，
+    - 并在小行星与你的飞船碰撞时结束。
 1. 让飞船动起来（含项目设置）
    - 创建主场景 main[Node2D]
    - 创建星空场景 bg[ParallaxBackground > ParallaxLayer > Sprite2D]
