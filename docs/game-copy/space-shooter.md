@@ -23,30 +23,6 @@
 ·游戏打包
  -->
 
-- 在前面的课程中，我们的飞船已经能够动起来了，
-- 接下来，我们要自动地生成小行星，也就是我们飞船的敌人。
-- 首先，创建小行星场景
-- 选择 Area2D 作为根节点，并改名为 asteroid。
-- 再添加一个行星动画子节点 AnimatedSprite2D，然后设置一下行星动画……
-- 然后，创建一个行星脚本 asteroid.gd，控制小行星不断地向左移动
-
-  - 定义一个变量 move_speed，表示小行星的移动速度
-  - 在 \_process 函数中，通过设置小行星节点的 position 属性，让小行星不断向左移动
-  - 当小行星移动到屏幕外 100 像素的时候，调用 queue_free 函数销毁小行星
-  - 最后，把小行星场景拖到主场景下，调整一下陨石的位置，看看效果吧！
-
-- 在主场景下，添加脚本 main.gd
-- 在主场景下，添加定时器 asteroid_timer，并将其设置为 autostart，然后，监听定时器信号 timeout，当定时器超时时，自动生成小行星。
-
-```gd
-var asteroid = preload("res://asteroid.tscn") # 小行星场景
-
-var asteroid_instance = asteroid.instantiate()
-	asteroid_instance.position = Vector2(SCREEN_WIDTH + 8, randf_range(16, SCREEN_WIDTH - 16))
-	add_child(asteroid_instance)
-
-```
-
 <!--
 
 视频脚本：
