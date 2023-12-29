@@ -3,6 +3,10 @@ export default [
     text: "首页",
     link: "/",
   },
+  // {
+  //   text: "上手指南",
+  //   link: "/guide/",
+  // },
   {
     text: "游戏复刻",
     link: "/game-copy/",
@@ -16,12 +20,12 @@ export default [
     children: [
       {
         text: "游戏资源",
-        children: [  
+        children: [
           {
             text: "itch",
             link: "https://itch.io/",
-          }
-        ]
+          },
+        ],
       },
       {
         text: "文档构建",
@@ -35,7 +39,7 @@ export default [
             text: "Element-plus",
             link: "https://element-plus.gitee.io/zh-CN/",
           },
-        ]
+        ],
       },
     ],
   },
