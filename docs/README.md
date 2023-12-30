@@ -1,9 +1,24 @@
 # 简介
 
+::: tip
+
 本站是为了介绍如何使用 [Godot 引擎](https://godotengine.org) 进行游戏开发的。
 
-致力于建立起一套 **Godot Engine 的游戏开发知识体系**，帮助更多的小伙伴开启游戏开发的大门。
+希望能够帮助更多小伙伴开启游戏制作的大门。
 
-<!-- 希望结识一帮志同道合的小伙伴，一起制作出**玩有所感、玩有所获**的独立游戏。 -->
+:::
 
+<Map :mapdata="mapdata"></Map>
 
+<script setup>
+// const mapdata = [
+//     { type: "rectangle", x: 10, y: 100, text: "什么 Godot 引擎？" },
+//     { type: "rectangle", x: 240, y: 100, text: "如何安装 Godot 引擎？" },
+//     { type: "ellipse", x: 580, y: 120, text: "复刻游戏《太空射手》" },
+// ]
+const mapdata = [
+    { type: "rectangle", text: "什么 Godot 引擎？" },
+    { type: "rectangle", text: "如何安装 Godot 引擎？" },
+    { type: "ellipse", text: "复刻游戏《太空射手》" },
+]
+</script>

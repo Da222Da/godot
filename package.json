@@ -22,6 +22,7 @@
     "@element-plus/icons-vue": "^2.1.0",
     "element-plus": "^2.2.26",
     "highlight.js": "9.15.8",
-    "markdown-it": "^13.0.1"
+    "markdown-it": "^13.0.1",
+    "roughjs": "^4.6.6"
   }
 }
