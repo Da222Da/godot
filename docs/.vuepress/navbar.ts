@@ -3,14 +3,10 @@ export default [
         text: "首页",
         link: "/",
     },
-    // {
-    //     text: "内容",
-    //     link: "/src/",
-    // },
-    // {
-    //   text: "游戏复刻",
-    //   link: "/game-copy/",
-    // },
+    {
+        text: "游戏复刻",
+        link: "/game-copy/",
+    },
     {
         text: "GitHub",
         link: "https://github.com/Da222Da/godot",

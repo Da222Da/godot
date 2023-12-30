@@ -1,35 +1,13 @@
-# 如何创建一个脚本？
+<PageHeader content="如何创建一个 gdscript 脚本？" />
 
 <VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/create_script.7z">
-
 <template #content>
 <video-iframe :video-id="834082629"></video-iframe>
 </template>
-
 </VideoCard>
 
-<!-- ```gdscript
-extends Sprite2D
-
-const speed = 500
-
-func _process(delta):
-	var direction = Vector2()
-	if Input.is_action_pressed("ui_left"):
-		direction.x = -1.0
-	if Input.is_action_pressed("ui_right"):
-		direction.x = 1.0
-	if Input.is_action_pressed("ui_up"):
-		direction.y = -1.0
-	if Input.is_action_pressed("ui_down"):
-		direction.y = 1.0
-
-	position += direction * speed * delta
-
-``` -->
-
 <!--
-- 简介
+- 视频脚本
 
 1. 今天向大家分享 | “如何创建一个脚本”?
 2. 脚本就是用来控制游戏节点行为的 | 简单讲，脚本就是能让我们的游戏动起来 | 这里我们使用 Godot 提供的脚本语言 GDScript 来创建脚本 | 并完成一个飞船移动的小例子

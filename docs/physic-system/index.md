@@ -4,14 +4,14 @@
 
 ::: tip 背景知识
 
-- [物体、物理体之间的关系？](./body.md)
-- [搞清楚碰撞形状是什么？](./collision-shapes.md)
+-   [在 Godot 中，物体、物理体之间的关系？](./body.md)
+-   [在 Godot 中，碰撞形状(CollisionShape) 是什么？](./collision-shape.md)
 
 :::
 
 ::: danger 示例 & 实操
 
-- 如何检测两个物体之间的碰撞？
+-   如何检测两个物体之间的碰撞？
 <!-- - 如何检测两个物理体之间的碰撞？ -->
 
 :::

@@ -21,10 +21,6 @@ import { ElPageHeader, ElAffix } from "element-plus";
 const props = defineProps(["content"]);
 
 const goBack = () => {
-    if (route.redirectedFrom) {
-        router.back();
-    } else {
-        router.push("/");
-    }
+    router.back();
 };
 </script>
