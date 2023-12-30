@@ -1,0 +1,30 @@
+<template>
+    <el-affix :offset="60">
+        <el-page-header
+            @back="goBack"
+            style="background-color: #fff; padding: 30px 0; margin-top: -5px"
+        >
+            <template #content>
+                <span class="text-large font-600 mr-3">
+                    {{ props.content }}
+                </span>
+            </template>
+        </el-page-header>
+    </el-affix>
+</template>
+
+<script setup>
+import { useRouter, useRoute } from "vue-router";
+const router = useRouter();
+const route = useRoute();
+import { ElPageHeader, ElAffix } from "element-plus";
+const props = defineProps(["content"]);
+
+const goBack = () => {
+    if (route.redirectedFrom) {
+        router.back();
+    } else {
+        router.push("/");
+    }
+};
+</script>

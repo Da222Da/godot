@@ -3,6 +3,7 @@ import ImageTextCard from "./src/ImageTextCard.vue";
 import VideoIframe from "./src/VideoIframe.vue";
 import VideoCard from "./src/VideoCard.vue";
 import Map from "./src/Map.vue";
+import PageHeader from "./src/PageHeader.vue";
 
 export default {
   install: (app) => {
@@ -12,5 +13,6 @@ export default {
     app.component("VideoIframe", VideoIframe);
     app.component("VideoCard", VideoCard);
     app.component("Map", Map);
+    app.component("PageHeader", PageHeader);
   },
 };
