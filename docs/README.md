@@ -17,4 +17,11 @@ const mapdata = [
     { type: "rectangle", text: "如何创建一个 gdscript 脚本？", link:"/gdscript/create-gdscript.md" },
     { type: "ellipse", text: "复刻游戏《太空射手》", link:"/game-copy/space-shooter.md" },
 ]
+
+// 如何安装 Godot 引擎？
+// 如何创建一个 gdscript 脚本？
+// 如何创建滚动背景？
+// 如何检测物体之间的碰撞？
+// 如何自定义信号？
+// 如何对游戏节点进行分组？
 </script>
