@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-22483c03","path":"/gdscript/signal.html","title":"如何在节点之间进行通信？","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1704112528000},"filePathRelative":"gdscript/signal.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7f046502","path":"/physic-system/body.html","title":"物体、物理体之间的关系？","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1703757493000},"filePathRelative":"physic-system/body.md"}');export{t as data};

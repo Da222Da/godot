@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-17062ac2","path":"/input-handling/input-singleton.html","title":"Input 单例类","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701756667000},"filePathRelative":"input-handling/input-singleton.md"}');export{t as data};

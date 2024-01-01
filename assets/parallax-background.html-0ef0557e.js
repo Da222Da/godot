@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-ebb7ee12","path":"/2D-graphics/parallax-background.html","title":"如何创建滚动视差背景？","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701756667000},"filePathRelative":"2D-graphics/parallax-background.md"}');export{a as data};

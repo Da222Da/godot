@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4fcdb410","path":"/physic-system/","title":"物理系统","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1703928060000},"filePathRelative":"physic-system/index.md"}');export{e as data};

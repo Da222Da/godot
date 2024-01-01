@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-9d64a518","path":"/2D-graphics/vector.html","title":"二维向量是什么？","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1700646552000},"filePathRelative":"2D-graphics/vector.md"}');export{t as data};

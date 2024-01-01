@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e8662866","path":"/game-copy/mario.html","title":"马里奥","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1703757493000},"filePathRelative":"game-copy/mario.md"}');export{e as data};

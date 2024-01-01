@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-479ed27c","path":"/2D-graphics/","title":"二维图形是什么？","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1700646552000},"filePathRelative":"2D-graphics/index.md"}');export{e as data};

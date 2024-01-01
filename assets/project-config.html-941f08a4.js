@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-099eb8e2","path":"/quickstart/project-config.html","title":"如何设置 Godot 引擎？","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"如何设计游戏显示窗口的大小？","slug":"如何设计游戏显示窗口的大小","link":"#如何设计游戏显示窗口的大小","children":[]}],"git":{"updatedTime":1704112528000},"filePathRelative":"quickstart/project-config.md"}');export{t as data};

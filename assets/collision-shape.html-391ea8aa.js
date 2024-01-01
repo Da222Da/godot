@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6b8c194b","path":"/physic-system/collision-shape.html","title":"搞清楚碰撞形状是什么？","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1703928060000},"filePathRelative":"physic-system/collision-shape.md"}');export{e as data};
