@@ -67,7 +67,7 @@
      1. 创建一个 Area2D 节点作为根节点，将其改名为“shot”，并将其放入“shot”组中（由于激光有很多）。
      2. 为 shot 创建一个 AnimatedSprite 子节点。为其新建 SpriteFrames 资源,并添加“shot1.png”和“shot2.png”作为帧，并勾选 Playing。
      3. 为 shot 创建一个 CollisionShape2D 子节点。将其形状设为一个 RectangleShape2D，然后调节碰撞矩形，使其覆盖激光精灵图。
-   - 创建激光脚本 shot.gd，实现子弹发射后不停向右移动
+   - 创建激光脚本 shot.gd，实现子弹发射后不停向右移动。
    - 让飞船发射激光
      1. 在 player 脚本中，预加载激光场景 shot.tscn，再监听空格键是否被按下。从而主场景中实例化激光。
      2. 限制激光不能连续射击（即在发射激光后，需要等待一段时间才能再次射击）。
