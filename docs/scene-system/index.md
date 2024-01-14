@@ -15,3 +15,12 @@
 -   [如何创建一个游戏场景？](./create-scene.md)
 
 :::
+
+::: warning 相关 API
+
+-   GDScript 脚本操作场景 && 节点的常用 API：
+    -   `Node.get_tree()` 获取该节点所在的场景树节点对象 SceneTree。
+    -   `SceneTree.quit()` 退出当前应用程序。
+    -   `SceneTree.change_scene_to_file(path)` 根据 path 实例化一个新场景，然后将正在运行的场景更改为该场景。
+
+:::
