@@ -24,4 +24,14 @@
         3. 回到 start_menu 脚本中，编写 start 按钮的代码逻辑，也就是，当 start 按钮被按下时，就调用 change_scene_to_file() 函数，把 start_menu 场景切换成 level1 场景。测试一下！
         4. 接下来，选中 quit 按钮，同样，添加一个 pressed 信号。编写 quit 按钮的代码逻辑，也就是，当 quit 按钮被按下时，就调用 quit() 函数，退出游戏！测试一下！
 
+2. 滚动视差背景
+    - 新增一个场景，然后，添加一个 ParallaxBackground 节点，作为场景的根节点，并改名为“background”。
+    - 接着，新增一个 ParallaxLayer 子节点，然后，为其添加一个 Sprite2D 子节点，再将资源目录下的背景图 background_layer_1.png，拖拽到 Sprite2D 子节点的 texture 纹理属性上。设置 Transform > Scale 属性设置为 3.6，不启用 Offset > Centered。
+    - 由于游戏中一共有远、中、近三层背景。接下来，先选中 ParallaxLayer 节点，连按两次 Ctrl + D 键，复制两个 ParallaxLayer 节点，分别是 ParallaxLayer2、ParallaxLayer3。
+    - 然后，依次将资源目录下的背景图 background_layer_2.png、background_layer_3.png，拖拽到对应 Sprite2D 节点的 texture 纹理属性上。
+    - 这样，就完成了背景图的设置。按住 Ctrl + S 键，保存一下场景。再我们在把 background 场景，拖拽到开始菜单场景下，看看效果。
+    - 接下来，我们要让背景图动起来。先回到 background 场景，选中根节点，添加一个脚本，删除无用代码。再定义一个变量 speed，表示背景图的移动速度，默认值为100。
+    - 然后，在游戏画面每一帧更新的时候，通过设置 ParallaxBackground 对象上的 scroll_offset 属性，也就是滚动背景的滚动值，从而，实现背景图的移动。
+    - 测试一下，你会发现背景图滚着滚着就没了，这是因为，我们还没有给设置无限背景，所以，接下来，我们来设置无限背景。选中 ParallaxLayer 节点，将 Motion > Mirroring 设置为背景图的宽度，即可！至于 ParallaxLayer2、ParallaxLayer3 同样如此。测试一下。
+    - 现在还有一个问题，就是远景、中景、近景的移动速度是一样的，这就不正常了，初中物理常识就告诉我们了，距离越远的地方，移动速度就越慢，距离越近的地方，物体移动速度就越快。所以，接下来，我们来调整一下三层背景图的移动速度。先选中 ParallaxLayer 节点，将 Motion > Scale 属性设置为了 0.2。同理，将 ParallaxLayer2 节点、ParallaxLayer3 节点的 Motion > Scale 属性设置为了 0.5、0.8，分别对应着中景和近景的移动速度，这里的 Scale 值越大，背景移动速度越快。
  -->

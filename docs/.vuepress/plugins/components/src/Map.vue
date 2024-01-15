@@ -19,8 +19,6 @@ const router = useRouter();
  * 3. 如何绘制连线，来链接两个图形？
  *
  * 4. 如何处理 canvas 事件？
- *
- * 5. 如何实现响应式 canvas? —— 借助 transform.scale & transform origin
  */
 import { onMounted } from "vue";
 import rough from "roughjs";
@@ -165,6 +163,7 @@ const drawMap = (canvas, datas = []) => {
 // 监听 resize,动态设置 canvas 比例
 const resizeCanvas = (canvas) => {
   const { offsetWidth } = canvas.parentElement;
+  // 如何实现响应式 canvas? —— 借助 transform.scale & transform origin
   canvas.style.transformOrigin = "top left";
   canvas.style.transform = `scale(${offsetWidth / canvasWidth})`;
 };
