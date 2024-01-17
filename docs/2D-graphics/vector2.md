@@ -1,4 +1,4 @@
-<PageHeader content="二维向量是什么？" />
+<PageHeader content="二维向量：" />
 
 二维向量，用于表示二维空间中的方向和大小。记作（x，y），如下图所示：
 

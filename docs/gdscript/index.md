@@ -4,7 +4,7 @@
 
 ::: tip 背景知识
 
-- [Gdscript 脚本的语法约定？](./grammar.md)
+- [Gdscript 语法约定？](./grammar.md)
 - [Gdscript 脚本与场景节点之间的关系？](./node-script-relationship.md)
 
 :::

@@ -1,4 +1,4 @@
-<PageHeader content="Gdscript 脚本的语法约定？" />
+<PageHeader content="Gdscript 语法约定？" />
 
 ::: tip 温馨提示
 
