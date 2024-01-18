@@ -6,21 +6,22 @@
 
 ::: tip 背景知识
 
--   [游戏、场景与节点之间的关系？](./what-scene.md)
+- [游戏、场景与节点之间的关系？](./what-scene.md)
 
 :::
 
 ::: danger 示例 & 实操
 
--   [如何创建一个游戏场景？](./create-scene.md)
+- [如何创建一个游戏场景？](./create-scene.md)
 
 :::
 
 ::: warning 相关 API
 
--   GDScript 脚本操作场景 && 节点的常用 API：
-    -   `Node.get_tree()` 获取该节点所在的场景树节点对象 SceneTree。
-    -   `SceneTree.quit()` 退出当前应用程序。
-    -   `SceneTree.change_scene_to_file(path)` 根据 path 实例化一个新场景，然后将正在运行的场景更改为该场景。
+- GDScript 脚本操作场景 && 节点的常用 API：
+  - **Node 类** 所有场景对象的基类：
+    - `get_tree()` 获取该节点所在的场景树的节点对象 SceneTree。
+  - `SceneTree.quit()` 退出当前应用程序。
+  - `SceneTree.change_scene_to_file(path)` 根据 path 实例化一个新场景，然后将正在运行的场景更改为该场景。
 
 :::
