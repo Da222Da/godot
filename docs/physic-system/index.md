@@ -5,9 +5,9 @@
 ::: tip 基础知识
 
 - [Body 物体](./body.md)
-  - [CharacterBody2D，通过脚本移动的 2D 物理体](./character-body-2d.md)
+  - [CharacterBody2D，创建“通过脚本移动的 2D 物理体”](./character-body-2d.md)
 - [CollisionShape 碰撞形状](./collision-shape.md)
-  - [CollisionShape2D 类](./collision-shape-2d.md)
+  - [CollisionShape2D 创建二维碰撞形状](./collision-shape-2d.md)
 
 :::
 
@@ -16,6 +16,15 @@
 - 如何检测普通物体之间的碰撞？
 
 ::: -->
+
+::: warning GDScript API
+
+- **Node 类** 所有场景对象的基类：
+  - `_physics_process(delta)` 每帧的物理处理函数`也就是那一帧存在物理处理的时候，就会调用该函数`
+- **ProjectSettings 类** 存储着可以在任何地方访问的全局变量
+  - `ProjectSettings.get_setting("physics/2d/default_gravity")` 获取 2D 物理的默认重力
+
+:::
 
 <!-- Collision layer 和 Collision Mask 是 Godot 中用于控制碰撞检测的两个属性。Collision layer 用于指定一个对象可以与哪些其他对象发生碰撞，而 Collision Mask 用于指定一个对象可以与哪些其他对象的哪些部分发生碰撞。
 

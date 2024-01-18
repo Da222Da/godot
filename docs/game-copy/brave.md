@@ -10,6 +10,7 @@
 1. 如何制作滚动视差背景？
 2. 如何构建游戏地图？
 3. 如何设置角色相机？
+4. 如何绘制 tilemap 地图图块的物理层？
 
  -->
 
@@ -57,18 +58,17 @@
     - 好了，按住 Ctrl + S 键，保存一下场景。在把 player 场景，拖拽到 level1 场景下，看看效果。
 
 4. 创建地图
-    - 将 backgrounp 场景，拖拽到level_1 场景中。然后，分离 backgrounp 场景的脚本，因为，我们希望看到人走背景才移动，而不是背景自动移动。
-    - 接下来，我们来绘制地图。
-
+    - 新增 tilemap 节点，并绘制测试地图
 5. 角色动画:
     - 新增动画: 静止idle、奔跑 run 、跳跃 jump 、下落 fall
-    - 用脚本空着播放动画
+    - 用脚本控制角色的行为动画
 6. 创建敌人：
-    - 新建一个场景，根节点 CharacterBody2D，改名为 enemy
+    - 新建场景 enemy[CharacterBody2D]
     - 添加敌人动画 AnimatedSprite2D：静止 idle，死亡 death、奔跑 run
-    - 创建碰撞体积 CollisionShape2D
-    - 添加重力影响
     - 自动地追击玩家
-        - 新增 area2D & CollisionShape2D 确定追击范围
-
+7. 新增收藏品金币
+    - 新建场景 gold[Area2D]
+    - 金币计数
+    - 金币消失动画
+    - 自动生成金币
  -->

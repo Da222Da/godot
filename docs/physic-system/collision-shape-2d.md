@@ -1,6 +1,6 @@
-<PageHeader content="CollisionShape2D 类：" />
+<PageHeader content="CollisionShape2D 节点：" />
 
-::: tip CollisionShape2D 是什么？
+::: tip CollisionShape2D 节点是干什么的？
 
 在 Godot 中，CollisionShape2D 用于描述 2D 空间物体碰撞形状。它可以根据不同的形状（如矩形、圆形、多边形等）来定义物体的形状，能够让你轻松地创建碰撞区域，以及控制物体之间碰撞检测。
 

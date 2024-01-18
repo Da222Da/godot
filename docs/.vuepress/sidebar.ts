@@ -4,11 +4,11 @@ export default {
       text: "简介",
       link: "/",
     },
-    { text: "快速上手", link: "/quickstart/" },
     { text: "场景系统", link: "/scene-system/" },
     { text: "2D 图形", link: "/2D-graphics/" },
     { text: "GDScript 脚本", link: "/gdscript/" },
     { text: "物理系统", link: "/physic-system/" },
+    { text: "项目设置", link: "/config/" },
     // { text: "用户输入" },
     // { text: "用户界面" },
     // {

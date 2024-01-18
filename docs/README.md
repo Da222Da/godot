@@ -10,9 +10,9 @@
 
 <script setup>
 const mapdata = [
-    { type: "rectangle", text: "Godot是什么？", link:"/quickstart/what-godot.md" },
-    { type: "rectangle", text: "如何安装 Godot 引擎？", link:"/quickstart/install.md" },
-    { type: "rectangle", text: "如何创建一个游戏项目？", link:"/quickstart/create-project.md" },
+    { type: "rectangle", text: "Godot是什么？", link:"/else/what-godot.md" },
+    { type: "rectangle", text: "如何安装 Godot 引擎？", link:"/else/install.md" },
+    { type: "rectangle", text: "如何创建一个游戏项目？", link:"/else/create-project.md" },
     { type: "rectangle", text: "如何创建一个游戏场景？", link:"/scene-system/create-scene.md" },
     { type: "rectangle", text: "如何创建一个 gdscript 脚本？", link:"/gdscript/create-gdscript.md" },
     { type: "ellipse", text: "复刻游戏《太空射手》", link:"/game-copy/space-shooter.md" },

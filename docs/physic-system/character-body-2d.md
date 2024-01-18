@@ -1,8 +1,8 @@
-<PageHeader content="CharacterBody2D 类" />
+<PageHeader content="CharacterBody2D 节点" />
 
 ::: tip CharacterBody2D 是什么？
 
-CharacterBody2D 类，专门用于创建通过脚本移动的角色`2D 物理物体`。
+CharacterBody2D 节点，专门用于创建通过脚本移动的角色`2D 物理物体`。
 
 这类物理体，通常是由用户控制的角色，必须按照特定的方式移动、与世界发生碰撞。
 
