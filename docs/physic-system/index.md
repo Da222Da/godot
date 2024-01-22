@@ -20,9 +20,9 @@
 ::: warning GDScript API
 
 - **Node 类** 所有场景对象的基类：
-  - `_physics_process(delta)` 每帧的物理处理函数`也就是那一帧存在物理处理的时候，就会调用该函数`
-- **ProjectSettings 类** 存储着可以在任何地方访问的全局变量
-  - `ProjectSettings.get_setting("physics/2d/default_gravity")` 获取 2D 物理的默认重力
+  - `_physics_process(delta)` 如果那一帧存在物理处理的话，就会调用该函数。
+- **ProjectSettings 类** 存储着可以在任何地方访问的全局变量。
+  - `ProjectSettings.get_setting("physics/2d/default_gravity")` 获取 2D 物理的默认重力。
 
 :::
 
