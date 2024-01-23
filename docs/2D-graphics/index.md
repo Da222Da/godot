@@ -9,7 +9,7 @@
 - [二维向量](./vector2.md)
   - [二维坐标系](./coordinate-system.md)
   - [二维向量如何运算？](./vector2-operation.md)
-- [Camera2D 二维摄像机](./camera2d.md)
+- [摄像机](./camera.md)
 - [ParallaxBackground 视差背景](./parallaxbackground.md)
 - [TileMap 瓷砖地图](./tilemap.md)
 
