@@ -9,14 +9,12 @@ export default {
     { text: "GDScript 脚本", link: "/gdscript/" },
     { text: "物理系统", link: "/physic-system/" },
     { text: "动画", link: "/animation/" },
-    { text: "项目设置", link: "/config/" },
     // { text: "用户输入" },
     // { text: "用户界面" },
-    // {
-    //   text: "附录",
-    //   collapsible: true,
-    //   children: ["/appendix/gdscript-grammar.md", "/appendix/project-config.md"],
-    // },
+    {
+      text: "附录 A",
+      link: "/appendix/",
+    },
   ],
   "/game-copy/": [
     {

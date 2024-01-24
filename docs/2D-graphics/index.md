@@ -11,7 +11,7 @@
   - [二维向量如何运算？](./vector2-operation.md)
 - [摄像机](./camera.md)
 - [ParallaxBackground 视差背景](./parallaxbackground.md)
-- [TileMap 瓷砖地图](./tilemap.md)
+- [TileMap 瓦片地图](./tilemap.md)
 
 :::
 

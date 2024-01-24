@@ -8,8 +8,17 @@
 
 :::
 
-::: warning 个人经验
+::: warning CollisionShape2D API
 
-一般来说，定义碰撞形状时不需要像素完美。形状越简单，性能越好，最终玩家可能不会注意到。例如，无论是在 2D 还是 3D 中，`CapsuleShape（胶囊形状）`都非常适合角色。
+- **CollisionShape2D** 用于描述 2D 空间物体碰撞形状。
+
+  - **shape 属性：**
+    - `CapsuleShape` 胶囊形状
+    - `CircleShape` 圆形形状
+    - `ConvexPolygonShape` 凸多边形形状
+    - `RectangleShape` 矩形形状
+    - `TriangleShape` 三角形形状
+
+- **CollisionPolygon2D** 定义 2D 碰撞多边形。
 
 :::
