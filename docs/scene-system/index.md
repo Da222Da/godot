@@ -2,20 +2,23 @@
 
 在游戏开发过程中，我们可以创建一个或多个场景，每个场景都包含了自己的场景内容、脚本逻辑以及游戏资源`例如，声音、动画`。
 
-而我们可以借助 Godot 提供的场景系统来管理这些游戏场景`例如，新建(删除)一个场景等`。
+而我们可以借助 Godot 提供的场景系统来管理这些游戏场景。
 
 ::: tip 背景知识
 
-- [游戏、场景与节点之间的关系？](./what-scene.md)
+-   [场景与节点之间的关系？](./what-scene.md)
+    -   [节点](./what-scene.md)
+    -   [场景](./what-scene.md)
 
 :::
 
 ::: danger 示例 & 实操
 
-- [如何创建一个游戏场景？](./create-scene.md)
+-   [如何创建一个游戏场景？](./create-scene.md)
 
 :::
 
+<<<<<<< HEAD
 ::: warning Godot API
 
 - **Node 类** 所有场景对象的基类：
@@ -26,5 +29,13 @@
 - **SceneTree 类** 用于管理场景中节点的层次结构以及场景本身：
   - `quit()` 退出当前应用程序。
   - `change_scene_to_file(path)` 将正在运行的场景更改为指定场景。
+=======
+::: warning 相关 API
+
+-   GDScript 脚本操作场景 && 节点的常用 API：
+    -   `Node.get_tree()` 获取该节点所在的场景树节点对象 SceneTree。
+    -   `SceneTree.quit()` 退出当前应用程序。
+    -   `SceneTree.change_scene_to_file(path)` 根据 path 实例化一个新场景，然后将正在运行的场景更改为该场景。
+>>>>>>> 3d3b424f19e3ac64d7e5c8b171192a1e920b6e19
 
 :::
