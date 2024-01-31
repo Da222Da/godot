@@ -16,12 +16,12 @@
 
 :::
 
-::: warning GDScript API
+::: warning Godot API
 
 - **Node 类** 所有场景对象的基类：
   - `get_tree()` 获取该节点所在的场景树对象 SceneTree。
   - `_ready()` 当节点及其子节点都已经进入场景树的时候，调用一次该函数。
-  - `_process(delta)` 游戏画面每一帧更新的时候，调用一次。
+  - `_process(delta)` 用于在每帧开始时执行代码。
     - `参数 delta` 表示自上一帧结束时到当前帧结束的时间间隔。
 - **SceneTree 类** 用于管理场景中节点的层次结构以及场景本身：
   - `quit()` 退出当前应用程序。
