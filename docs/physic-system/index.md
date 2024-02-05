@@ -10,23 +10,26 @@
 - **物理碰撞检测：** 是指检测两个物体是否发生碰撞的过程。
   - [Body 物体](./body.md)
     - CollisionObject2D 2D 碰撞对象
-      - [Area2D 类，创建二维检测区域](./area-2d.md)
+      - [Area2D 类，创建 2D 检测区域](./area-2d.md)
       - PhysicsBody2D 2D 物理体
         - [CharacterBody2D 类，创建“靠代码控制的移动 2D 物理体”](./character-body-2d.md)
-        - `StaticBody2D 类`，创建无法被移动的 2D 物理体
-        - `RigidBody2D 类`，创建无法直接控制，必须施加力（重力等），才能移动的 2D 物理体
+        - `StaticBody2D 类`，创建无法被移动的 2D 物理体。
+        - `RigidBody2D 类`，创建无法直接控制，必须施加力（重力等），才能移动的 2D 物理体。
   - CollisionShape 碰撞形状
     - [CollisionShape2D 类， 定义二维碰撞形状](./collision-shape-2d.md)
+    - `CollisionPolygon2D 类` 用于定义二维多边形碰撞形状。
   - `Collision Layer 属性`：用于指定该节点所属的碰撞图层。
   - `Collision Mask 属性`：用于指定该节点可以与哪些碰撞图层发生碰撞。
 - **物理碰撞响应：** 是指当两个物体发生碰撞时，它们之间相互作用的响应过程。
+
 :::
 
-<!-- ::: danger 示例 & 实操
+::: danger 示例 & 实操
 
-- 如何检测普通物体之间的碰撞？
+- 如何检测 2D 区域之间的碰撞？
+- 如何检测 2D 物理体与 2D 区域之间的碰撞？
 
-::: -->
+:::
 
 ::: warning GDScript API
 

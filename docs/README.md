@@ -13,15 +13,13 @@ const mapdata = [
     { type: "rectangle", text: "Godot是什么？", link:"/else/what-godot.md" },
     { type: "rectangle", text: "如何安装 Godot 引擎？", link:"/else/install.md" },
     { type: "rectangle", text: "如何创建一个游戏项目？", link:"/else/create-project.md" },
-    { type: "rectangle", text: "如何创建一个游戏场景？", link:"/scene-system/create-scene.md" },
-    { type: "rectangle", text: "如何创建一个 gdscript 脚本？", link:"/gdscript/create-gdscript.md" },
+    { type: "rectangle", text: "玩转场景系统？", link:"/scene-system/index.md" },
+    { type: "rectangle", text: "玩转 2D 图形的各种操作？", link:"/2D-graphics/index.md" },
+    { type: "rectangle", text: "玩转 GDScript 脚本语言？", link:"/gdscript/index.md" },
+    { type: "rectangle", text: "玩转用户输入的各种情况？", link:"/input-handling/index.md" },
+    { type: "rectangle", text: "建立定时器的观念？", link:"/timer/index.md" },
+    { type: "rectangle", text: "玩转物理系统？", link:"/physic-system/index.md" },
     { type: "ellipse", text: "复刻游戏《太空射手》", link:"/game-copy/space-shooter.md" },
 ]
 
-// 如何安装 Godot 引擎？
-// 如何创建一个 gdscript 脚本？
-// 如何创建滚动背景？
-// 如何检测物体之间的碰撞？
-// 如何自定义信号？
-// 如何对游戏节点进行分组？
 </script>
