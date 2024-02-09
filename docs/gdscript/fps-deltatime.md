@@ -1,7 +1,5 @@
 <PageHeader content="FPS 帧速率 && DeltaTime 增量时间？" />
 
-<BilibiliTutorial :video-id="1250422552"></BilibiliTutorial>
-
 ::: tip 基础知识
 
 -   **帧速率**，也称为 FPS（Frames Per Second），是指每秒钟显示的图像帧数。它是衡量视频或动画流畅度的重要指标。例如，早期电影的标准帧速率是 24 FPS，也就是每秒要播放 24 张图像。**不同图像显示设备的帧速率各不相同，帧速率也高，画面越清晰、动作越流畅**。

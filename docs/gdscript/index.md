@@ -16,7 +16,7 @@
 ::: danger 示例 & 实操
 
 -   [如何创建一个 gdscript 脚本？](./create-gdscript.md)
--   如何理解增量时间 DeltaTime？
+-   [如何理解增量时间 DeltaTime？](./fps-deltatime-understand.md)
 -   信号：
     -   如何连接 Godot 的内置信号？
     -   信号与定时器？
