@@ -1,6 +1,8 @@
-<PageHeader content="自定义输入映射? 获取用户输入的两种方式？" />
+<PageHeader content="获取用户输入的两种方式？" />
 
-::: warning Title 获取用户输入的两种方式？
+<BilibiliTutorial :video-id="1950208333"></BilibiliTutorial>
+
+<!-- ::: warning Title 获取用户输入的两种方式？
 
 #### 方式 1：使用 Input 单例类
 
@@ -28,4 +30,4 @@ func _input(event):
 		sprite_2d.scale += Vector2(0.1, 0.1)
 ```
 
-:::
+::: -->
