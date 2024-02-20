@@ -4,22 +4,23 @@
 
 ::: tip 基础知识
 
--   Gdscript 脚本语言：
-    -   [Gdscript 脚本与节点对象之间的关系？](./node-script-relationship.md)
-    -   [Gdscript 语法约定](./grammar.md)
-    -   [Signal 信号](./signal.md)
--   [FPS 帧速率 && DeltaTime 增量时间](./fps-deltatime.md)
--   [Timer 定时器节点](./timer.md)
+- Gdscript 脚本语言：
+  - [Gdscript 脚本与节点对象之间的关系？](./node-script-relationship.md)
+  - [Gdscript 语法约定](./grammar.md)
+      <!-- - [算术运算符](./grammar/arithmetic-operators.md)  -->
+  - [Signal 信号](./signal.md)
+- [FPS 帧速率 && DeltaTime 增量时间](./fps-deltatime.md)
+- [Timer 定时器节点](./timer.md)
 
 :::
 
 ::: danger 示例 & 实操
 
--   [如何创建一个 gdscript 脚本？](./create-gdscript.md)
--   [如何理解增量时间 DeltaTime？](./fps-deltatime-understand.md)
--   信号：
-    -   [如何连接 Godot 自带的内置信号？](./signal-builtin.md)
-    -   [如何创建自定义信号？](./signal-custom.md)
+- [如何创建一个 gdscript 脚本？](./create-gdscript.md)
+- [如何理解增量时间 DeltaTime？](./fps-deltatime-understand.md)
+- 信号：
+  - [如何连接 Godot 自带的内置信号？](./signal-builtin.md)
+  - [如何创建自定义信号？](./signal-custom.md)
 
 :::
 
@@ -29,12 +30,21 @@
 
 #### 内置函数
 
--   **`\_ready()`** 当节点被加载到节点树中，准备渲染的时候，该函数就会被执行。
--   **`\_process(delta)`** 该函数就在游戏每一帧渲染之前被执行。
-    -   delta 参数，表示增量时间（以秒为单位）。
+- **`\_ready()`** 当节点被加载到节点树中，准备渲染的时候，该函数就会被执行。
+- **`\_process(delta)`** 该函数就在游戏每一帧渲染之前被执行。
+  - delta 参数，表示增量时间（以秒为单位）。
 
 #### 修饰符
 
--   **`@onready`** 使用 @onready 标记过的属性不会即刻赋值，而是，在调用 `Node._ready()` 之前，也就是节点及其子节点都已经进入场景树的时候，才进行赋值。
+- **`@onready`** 使用 @onready 标记过的属性不会即刻赋值，而是，在调用 `Node._ready()` 之前，也就是节点及其子节点都已经进入场景树的时候，才进行赋值。
+- **`@export`** 将变量暴露给编辑器，使游戏更加容易更新，方便调试。
+
+:::
+
+::: warning 全局函数
+
+- **`randi(a, b)`** 是一个全局函数，用于生成一个随机整数。
+  - 它接受两个整数参数，表示生成随机数的范围。
+  - 例如，randi(1, 100) 将生成一个介于 1 和 100 之间的随机整数（包括 1 和 100）
 
 :::
