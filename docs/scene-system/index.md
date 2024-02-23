@@ -7,6 +7,14 @@
 ::: tip 基础知识
 
 - [场景与节点之间的关系？](./what-scene.md)
+- **场景操作：**
+  - 预加载场景文件`@GDScript.preload()`
+  - 实例化场景对象`PackedScene.instantiate()`
+  - 退出游戏场景`Node.get_tree().quit()`
+  - 切换游戏场景`Node.get_tree().change_scene_to_file()`
+- **节点操作：**
+  - 获取节点`$"."`
+  - 获取子节点`Node.get_children()`
 
 :::
 
@@ -18,28 +26,20 @@
 
 :::
 
-::: warning 相关 API
+::: warning 常用快捷键
 
-- **操作场景 API：**
+#### 场景操作的快捷键
 
-  - 实例化节点对象
-    - `@GDScript.preload(scene_path) -> Resource>PackedScene` 预加载场景文件
-    - `PackedScene.instantiate() -> Node` 实例化场景
-  - 退出游戏
-    - `Node.get_tree()` 获取该节点所在的场景树节点对象 SceneTree。
-    - `SceneTree.quit()` 退出当前应用程序。
-  - 切换场景
-    - `Node.get_tree()` 获取该节点所在的场景树节点对象 SceneTree。
-    - `SceneTree.change_scene_to_file(path)` 实例化一个新场景用来替换正在运行的场景。
+| 名称       | 说明         |
+| ---------- | ------------ |
+| `Ctrl + N` | 新建一个场景 |
 
-- **操作节点 API：**
+#### 节点操作的快捷键
 
-  - 获取节点
-    - `Node.get_children()` 获取节点的子节点，返回一个数组。
-
-- **好用的快捷键：**
-  - `Ctrl + A` 快速调出创建节点的对话框。
-  - `Ctrl + D` 快速复制当前选中的节点。
-  - `Ctrl + 鼠标左键` 同时选择多个节点。
+| 名称              | 说明                       |
+| ----------------- | -------------------------- |
+| `Ctrl + A`        | 快速调出创建节点的对话框。 |
+| `Ctrl + D`        | 快速复制当前选中的节点。   |
+| `Ctrl + 鼠标左键` | 同时选择多个节点。         |
 
 :::
