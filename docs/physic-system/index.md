@@ -19,9 +19,9 @@
   - CollisionShape 碰撞形状
     - [CollisionShape2D 类， 定义二维碰撞形状](./collision-shape-2d.md)
     - `CollisionPolygon2D 类` 用于定义二维多边形碰撞形状。
-  - `Collision Layer 属性`：用于指定该节点所属的碰撞图层。
-  - `Collision Mask 属性`：用于指定该节点可以与哪些碰撞图层发生碰撞。
-- **物理碰撞响应：** 是指当两个物体发生碰撞时，它们之间相互作用的响应过程。
+  - 碰撞属性
+    - `Collision Layer 属性`：用于指定该节点所属的碰撞图层。
+    - `Collision Mask 属性`：用于指定该节点可以与哪些碰撞图层发生碰撞。
 
 :::
 
