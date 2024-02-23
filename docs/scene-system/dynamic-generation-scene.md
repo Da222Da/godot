@@ -1,5 +1,13 @@
 <PageHeader content="如何动态生成游戏场景？" />
 
+<a href="/godot/zips/dynamic-generation-scene.zip"><el-button type="primary" plain>素材下载</el-button></a>
+
+<!-- <VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/dynamic-generation-scene.zip">
+<template #content>
+<video-iframe :video-id="1200994983"></video-iframe>
+</template>
+</VideoCard> -->
+
 <!-- <BilibiliTutorial :video-id="621037418"></BilibiliTutorial> -->
 
 <!--
@@ -49,9 +57,19 @@
 
 ### 重点内容
 
-新增一个主场景 main
+1. 给恶魔场景 Demon 新增一个脚本
+    - 自定义攻击信号 signal_attack
+    - 监听空格键被按下，并发射攻击信号 signal_attack
 
-再把恶魔场景 demon 实例化到主场景 main 中，顺便调整一下，恶魔的位置、大小。
+2. 新增一个主场景 main
+    - 再把恶魔场景 demon 实例化到主场景 main 中，顺便调整一下，恶魔的位置、大小。
+    - 给主场景 main 新增一个脚本
+        - 监听恶魔发射攻击信号 signal_attack
+        - 监听动画结束信号 animation_finished, 并在攻击动画结束的时候，【动态生成火球场景】以及播放静止动画
+        - 多生成几个火球
+
+3. 给火球场景 FireBall 新增一个脚本：
+    - 让火球以每秒 500 像素的速度向左移动
 
 ### 结尾
 
