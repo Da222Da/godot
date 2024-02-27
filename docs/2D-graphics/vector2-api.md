@@ -1,4 +1,4 @@
-<PageHeader content="Vector2: 浮点数坐标的 2D 向量" />
+<PageHeader content="Vector2: 浮点数 2D 向量内置对象" />
 
 ::: warning Vector2 API
 

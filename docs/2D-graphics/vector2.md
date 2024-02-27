@@ -1,5 +1,7 @@
 <PageHeader content="二维向量" />
 
+<BilibiliTutorial :video-id="1401110314"></BilibiliTutorial>
+
 ::: tip 什么是二维向量？
 
 二维向量，用于表示二维空间中的方向和大小。记作（x，y），如下图所示：

@@ -6,24 +6,27 @@
 
 ::: tip 基础知识
 
-- [二维坐标系](./coordinate-system.md)
+- 线性代数
+  - [二维坐标系](./coordinate-system.md)
   - [二维向量](./vector2.md)
-  - [二维向量如何运算？](./vector2-operation.md)
+  - [二维向量运算方式?](./vector2-operation.md)
 - [CanvasItem: 二维空间中所有对象的抽象基类](./canvas-item.md)
   - [Node2D: 2D 节点的基类](./node2d.md)
     - [Camera2D 摄像机](./camera2d.md)
     - [ParallaxBackground 视差背景](./parallaxbackground.md)
     - [TileMap 瓦片地图](./tilemap.md)
     - [Marker2D 标记特殊位置](./marker2d.md)
-- [Vector2: 浮点数坐标的 2D 向量](./vector2-api.md)
+- [Vector2: 浮点数 2D 向量内置对象](./vector2-api.md)
 
 :::
 
-<!-- ::: danger 示例 & 实操
+::: danger 示例 & 实操
 
-- [如何制作滚动视差背景？](./parallax-background.md)
+<!-- - [如何制作滚动视差背景？](./parallax-background.md) -->
 
-::: -->
+- [二维向量及其基础运算？](./vector2.md)
+
+:::
 
 ::: warning 相关资料
 
