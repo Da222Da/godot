@@ -6,7 +6,7 @@
 
 :::
 
-<h2 style="text-align: center;">Godot 2D 游戏开发指南图 <Badge text="探索中……"  /></h2>
+<h2 style="text-align: center;">基于 Godot 的 2D 游戏上手指南地图 <Badge text="探索中……"  /></h2>
 
 <Map :mapdata="mapdata"></Map>
 
