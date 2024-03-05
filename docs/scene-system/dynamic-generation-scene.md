@@ -1,14 +1,10 @@
 <PageHeader content="如何动态生成游戏场景？" />
 
-<a href="/godot/zips/dynamic-generation-scene.zip"><el-button type="primary" plain>素材下载</el-button></a>
-
-<!-- <VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/dynamic-generation-scene.zip">
+<VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/dynamic-generation-scene.zip">
 <template #content>
-<video-iframe :video-id="1200994983"></video-iframe>
+<video-iframe :video-id="1101430197"></video-iframe>
 </template>
-</VideoCard> -->
-
-<!-- <BilibiliTutorial :video-id="621037418"></BilibiliTutorial> -->
+</VideoCard>
 
 <!--
 视频脚本：
@@ -38,9 +34,9 @@
 
 然后，找到检查器面板中的 Sprite Frames 属性，新建 SpriteFrames，用于新增和管理精灵帧动画。
 
-接着，打开动画帧面板，点击“从精灵表中添加帧”，选择导入的图片 idle.png，并选择你想要的画面帧添加到动画帧面板中。
+接着，打开动画帧面板，点击“从精灵表中添加帧”，选择导入的图片 idle.png，
 
-然后，播放选中动画，你就会看到一个点头哈腰的恶魔。再把动画名称改为 idle，方便后面好引用。
+然后，播放选中动画，你就会看到一个点头哈腰的恶魔。
 
 接下来，新增一个攻击动画 attack，和 idle 动画一样，为其添加画面帧【快进】。
 
