@@ -1,4 +1,4 @@
-<PageHeader content="物体 Body：" />
+<PageHeader content="物体与物理体之间的区别？：" />
 
 ::: tip 什么是物体 Body?
 

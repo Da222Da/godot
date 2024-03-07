@@ -8,13 +8,6 @@
 
 :::
 
-::: danger 节点类型
-
-- `Object` 所有类的基类
-  - `Node` 所有场景对象的基类
-
-:::
-
 ::: warning 额外说明
 
 - [Godot 是什么？](./extra/what-godot.md)
