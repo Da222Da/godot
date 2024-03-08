@@ -20,7 +20,7 @@
 
 #### 常用节点：
 
-- [Area2D 类，创建 2D 检测区域](./area-2d.md)
+- [Area2D 类，创建 2D 检测区域](./nodes/area2d.md)
 - PhysicsBody2D 2D 物理体
   - [CharacterBody2D 类，创建“靠代码控制的移动 2D 物理体”](./character-body-2d.md)
   - `StaticBody2D 类`，创建无法被移动的 2D 物理体。

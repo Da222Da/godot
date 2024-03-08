@@ -7,26 +7,24 @@
 ::: tip 基础知识
 
 - 基本概念：
-  - [二维坐标系](./coordinate-system.md)
+  - [二维坐标系？](./coordinate-system.md)
   - [二维向量及其运算方式?](./vector2.md)
-- 常用的内置节点：
+  - **粒子效果:** 动态生成的小物体，让游戏更加生动。
+- 内置节点：
+
   - [CanvasItem: 画布节点](../nodes/canvasItem.md)
   - [Sprite2D: 显示 2D 纹理的节点](../nodes/sprite2d.md)
-  - [TileMap && TileSet: 瓦片地图](../nodes/tilemap.md)
-  <!-- - [CanvasItem: 二维空间中所有对象的抽象基类](./canvas-item.md)
+  - [TileMap && TileSet: 瓦片地图](../nodes/tilemap/index.md)
+  - [GPUParticles2D: 粒子发射器](../nodes/particle/gpuparticles2d.md)
+    - [ParticleProcessMaterial: 贴图粒子材质](../nodes/particle/particle-process-material.md)
+
+:::
+
+<!-- - [TileMap && TileSet: 瓦片地图](../tilemap/node.md)
+     [CanvasItem: 二维空间中所有对象的抽象基类](./canvas-item.md)
   - [Node2D: 2D 节点的基类](./node2d.md)
     - [Camera2D 摄像机](./camera2d.md)
     - [ParallaxBackground 视差背景](./parallaxbackground.md)
-    - [TileMap 瓦片地图](./tilemap.md)
-    - [Marker2D 标记特殊位置](./marker2d.md)
-      [Vector2: 浮点数 2D 向量内置对象](./vector2-api.md)
-      -->
-
-:::
-
-::: danger 示例 & 实操
-
-- [二维向量及其运算方式](./vector2.md)
-<!-- - [如何制作滚动视差背景？](./parallax-background.md) -->
-
-:::
+    - [TileMap   瓦片地图](./tilemap.md)
+- [Marker2D 标记特殊位置](./marker2d.md)
+      [Vector2: 浮点数 2D 向量内置对象](./vector2-api.md) -->
