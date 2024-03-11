@@ -10,6 +10,8 @@ export default {
     { text: "用户输入", link: "/input-handling/" },
     { text: "动画", link: "/animation/" },
     { text: "物理系统", link: "/physic-system/" },
+    { text: "粒子", link: "/particle/" },
+    { text: "灯光", link: "/light/" },
     {
       text: "附录 A",
       link: "/help/",
@@ -21,6 +23,5 @@ export default {
       link: "/game-copy/",
     },
     "/game-copy/space-shooter.md",
-    // "/game-copy/brave.md",
   ],
 };

@@ -15,6 +15,8 @@ Object > RefCounted > Resource > Material > ParticleProcessMaterial
 - 方向
   - `direction` 指定粒子发射方向的单位向量。
   - `spread` 指定每个粒子的初始方向范围`默认值 45 => [-45, +45]`。
+- `Emission Shape` 设置粒子的发射区域
+  - `Shape` 发射区域的形状
 - `gravity` 设置每个粒子所受重力的影响。
 - `initial_velocity_min && initial_velocity_max` 设置粒子的初始速度范围。
 - `scale_min ** scale_max` 设置粒子缩放范围。

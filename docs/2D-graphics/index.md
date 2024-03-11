@@ -7,9 +7,10 @@
 ::: tip 基础知识
 
 - 基本概念：
+
   - [二维坐标系？](./coordinate-system.md)
   - [二维向量及其运算方式?](./vector2.md)
-  - **粒子效果:** 动态生成的小物体，让游戏更加生动。
+
 - 内置节点：
 
   - [CanvasItem: 画布节点](../nodes/canvasItem.md)

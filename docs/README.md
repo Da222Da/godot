@@ -6,7 +6,7 @@
 
 :::
 
-<h2 style="text-align: center;">基于 Godot 的 2D 游戏上手指南地图 <Badge text="探索中……"  /></h2>
+<!-- <h2 style="text-align: center;">基于 Godot 的 2D 游戏上手指南地图 <Badge text="探索中……"  /></h2>
 
 <Map :mapdata="mapdata"></Map>
 
@@ -32,4 +32,4 @@ const mapdata = [
     { type: "ellipse", text: "复刻游戏《太空射手》", link:"/game-copy/space-shooter.md" },
 ]
 
-</script>
+</script> -->
