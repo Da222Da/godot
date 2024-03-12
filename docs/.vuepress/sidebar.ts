@@ -10,10 +10,10 @@ export default {
     { text: "用户输入", link: "/input-handling/" },
     { text: "动画", link: "/animation/" },
     { text: "物理系统", link: "/physic-system/" },
-    { text: "粒子", link: "/particle/" },
-    { text: "灯光", link: "/light/" },
+    { text: "粒子效果", link: "/particle/" },
+    { text: "灯光与阴影", link: "/light/" },
     {
-      text: "附录 A",
+      text: "附录：常见问题",
       link: "/help/",
     },
   ],

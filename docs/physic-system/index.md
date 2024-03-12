@@ -22,9 +22,9 @@
 
 - [Area2D 类，创建 2D 检测区域](./nodes/area2d.md)
 - PhysicsBody2D 2D 物理体
-  - [CharacterBody2D 类，创建“靠代码控制的移动 2D 物理体”](./character-body-2d.md)
+  - [CharacterBody2D 类，创建“靠代码控制来移动 2D 物理体”](./character-body-2d.md)
+  - [RigidBody2D 刚体，靠外力才能被移动的 2D 物理体](./rigid-body-2d.md)
   - `StaticBody2D 类`，创建无法被移动的 2D 物理体。
-  - [RigidBody2D 刚体](./rigid-body-2d.md)
 - CollisionShape 碰撞形状
   - [CollisionShape2D 类， 定义二维碰撞形状](./collision-shape-2d.md)
   - `CollisionPolygon2D 类` 用于定义二维多边形碰撞形状。

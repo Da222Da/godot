@@ -1,6 +1,6 @@
 export default [
   {
-    text: "首页",
+    text: "基础知识",
     link: "/",
   },
   {

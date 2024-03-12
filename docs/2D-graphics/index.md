@@ -6,18 +6,19 @@
 
 ::: tip 基础知识
 
-- 基本概念：
+#### 常见问题：
 
-  - [二维坐标系？](./coordinate-system.md)
-  - [二维向量及其运算方式?](./vector2.md)
+  <!-- - [二维坐标系？](./coordinate-system.md) -->
 
-- 内置节点：
+- [什么是二维向量及其运算方式?](./vector2.md)
 
-  - [CanvasItem: 画布节点](../nodes/canvasItem.md)
-  - [Sprite2D: 显示 2D 纹理的节点](../nodes/sprite2d.md)
-  - [TileMap && TileSet: 瓦片地图](../nodes/tilemap/index.md)
-  - [GPUParticles2D: 粒子发射器](../nodes/particle/gpuparticles2d.md)
-    - [ParticleProcessMaterial: 贴图粒子材质](../nodes/particle/particle-process-material.md)
+#### 内置节点：
+
+- [CanvasItem: 画布节点](../nodes/canvasItem.md)
+- [Sprite2D: 显示 2D 纹理的节点](../nodes/sprite2d.md)
+- [TileMap && TileSet: 瓦片地图](../nodes/tilemap/index.md)
+- [GPUParticles2D: 粒子发射器](../nodes/particle/gpuparticles2d.md)
+  - [ParticleProcessMaterial: 贴图粒子材质](../nodes/particle/particle-process-material.md)
 
 :::
 
