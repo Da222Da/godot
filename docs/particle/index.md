@@ -19,3 +19,9 @@
     - [ParticleProcessMaterial: 贴图粒子材质](../nodes/particle/particle-process-material.md)
 
 :::
+
+::: danger 示例 & 实操
+
+- [实现一个爱心粒子效果？](./particle-love-demo.md)
+
+:::
