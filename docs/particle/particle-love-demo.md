@@ -2,6 +2,6 @@
 
 <VideoCard title="Bilibili 视频教程" downloadLink="/godot/zips/particle-love-demo.zip">
 <template #content>
-<video-iframe :video-id="1101430197"></video-iframe>
+<video-iframe :video-id="1951963228"></video-iframe>
 </template>
 </VideoCard>
