@@ -10,14 +10,14 @@ Object > Node > CanvasItem
 
 ### 常用属性
 
-- `visible` 是否可见。
-- `modulate` 调节画布颜色，并影响子节点的画布颜色。
-- `self_modulate` 调节画布颜色，不会影响子节点的画布颜色。
-- `texture_filter` 设置画布中纹理的过滤模式
-- `texture_repeat` 设置画布中纹理的平铺模式
+-   `visible` 是否可见。
+-   `modulate` 可以调节任何节点的颜色和透明度，并影响子节点的画布颜色。
+-   `self_modulate` 和 modulate 属性一样，但不会影响子节点的画布颜色。
+-   `texture_filter` 设置画布中纹理的过滤模式
+-   `texture_repeat` 设置画布中纹理的平铺模式
 
 #### 常用方法
 
-- `get_global_mouse_position()` 返回该对象在全局坐标系中的鼠标位置。
+-   `get_global_mouse_position()` 返回该对象在全局坐标系中的鼠标位置。
 
 :::
