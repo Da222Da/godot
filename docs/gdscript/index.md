@@ -4,13 +4,20 @@
 
 ::: tip 基础知识
 
-- Gdscript 脚本语言：
-  - [Gdscript 脚本与节点对象之间的关系？](./node-script-relationship.md)
-  - [Gdscript 语法约定](./grammar.md)
-      <!-- - [算术运算符](./grammar/arithmetic-operators.md)  -->
-  - [Signal 信号](./signal.md)
+#### GDScript 语法
+
+- [语法约定](./grammar/index.md)
+- [Signal 信号](./signal.md)
+
+#### 常见问题：
+
+- [Gdscript 脚本与节点对象之间的关系？](./node-script-relationship.md)
 - [FPS 帧速率 && DeltaTime 增量时间](./fps-deltatime.md)
-- [Timer 定时器节点](./timer.md)
+
+#### 内置节点
+
+- [Timer 定时器节点](../nodes/timer.md)
+- [Node 所有场景对象的基类](../nodes/node.md)
 
 :::
 
@@ -30,21 +37,11 @@
 
 #### 内置函数
 
-- **`\_ready()`** 当节点被加载到节点树中，准备渲染的时候，该函数就会被执行。
-- **`\_process(delta)`** 该函数就在游戏每一帧渲染之前被执行。
-  - delta 参数，表示增量时间（以秒为单位）。
+- delta 参数，表示增量时间（以秒为单位）。
 
 #### 修饰符
 
 - **`@onready`** 使用 @onready 标记过的属性不会即刻赋值，而是，在调用 `Node._ready()` 之前，也就是节点及其子节点都已经进入场景树的时候，才进行赋值。
 - **`@export`** 将变量暴露给编辑器，使游戏更加容易更新，方便调试。
-
-:::
-
-::: warning 全局函数
-
-- **`randi(a, b)`** 是一个全局函数，用于生成一个随机整数。
-  - 它接受两个整数参数，表示生成随机数的范围。
-  - 例如，randi(1, 100) 将生成一个介于 1 和 100 之间的随机整数（包括 1 和 100）
 
 :::
