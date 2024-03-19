@@ -1,4 +1,4 @@
-<PageHeader content="CanvasItem: 画布节点" />
+<PageHeader content="CanvasItem 画布抽象类" />
 
 CanvasItem 是二维空间中所有对象的抽象基类。
 
@@ -18,6 +18,6 @@ Object > Node > CanvasItem
 
 #### 常用方法
 
--   `get_global_mouse_position()` 返回该对象在全局坐标系中的鼠标位置。
+-   `get_global_mouse_position()` 获取当前图层中的鼠标位置。
 
 :::

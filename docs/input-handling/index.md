@@ -1,32 +1,43 @@
-# 输入处理
+# 用户输入
+
+在 Godot 中，用户输入是指玩家通过键盘、鼠标、手柄或触摸屏等设备输入的操作，如按键、点击或滑动等。
+
+Godot 引擎提供了方便的输入处理系统，可以轻松地检测和响应用户输入。您可以通过信号或脚本来处理不同类型的用户输入。您还可以使用 Godot 的输入事件功能来管理用户输入。
 
 ::: tip 基础知识
 
--   **获取用户输入的方式：**
-    -   \_input(event) 内置函数
-    -   Input 单例类
--   **输入映射**：将输入设备（键盘、鼠标等）的输入事件（如“按下空格键”）映射到游戏操作中。
+#### 基础概念
+
+- **输入映射**：将输入设备（键盘、鼠标等）的输入事件（如“按下空格键”）映射到游戏操作中。
+
+#### 内置节点 && 类
+
+- [Input 单例类: 用于检测和响应各种输入事件](../nodes/input.md)
+- [Node 类: 所有场景对象的基类](../nodes/node.md)
+  - [CanvasItem 画布抽象类: 用于获取鼠标位置信息等](../nodes/canvasItem.md)
 
 :::
 
 ::: danger 示例 & 实操
 
--   [获取用户输入的两种方式？](./get-user-input.md)
--   [如何自定义输入映射？](./custom-input-map.md)
+- 如何处理用户输入事件：
+
+      - [获取用户输入的两种方式？](./get-user-input.md)
+      - [如何自定义输入映射？](./custom-input-map.md)
 
 :::
 
-::: warning Godot 内置对象 API
+<!-- ::: warning Godot 内置对象 API
 
 #### Input 单例类：用于检测和响应各种输入事件
 
--   `is_action_pressed(action_name)` : 检测某一按钮是否被按下(长按有效)。
--   `is_action_just_pressed(action_name)` : 检测某一按钮是否被按下(仅触发一次)。
--   `get_axis(-a, +a)`:通过指定两个动作来获取轴的输入，一个是负的，一个是正的。
--   `get_vector(-x, +x, -y, +y)`:通过指定正负 X 和 Y 轴的四个动作来获取输入向量。
+- `is_action_pressed(action_name)` : 检测某一按钮是否被按下(长按有效)。
+- `is_action_just_pressed(action_name)` : 检测某一按钮是否被按下(仅触发一次)。
+- `get_axis(-a, +a)`:通过指定两个动作来获取轴的输入，一个是负的，一个是正的。
+- `get_vector(-x, +x, -y, +y)`:通过指定正负 X 和 Y 轴的四个动作来获取输入向量。
 
 #### Node 所有场景对象的基类
 
--   `_input(event: InputEvent)` 有输入事件时会被调用。
+- `_input(event: InputEvent)` 有输入事件时会被调用。
 
-:::
+::: -->

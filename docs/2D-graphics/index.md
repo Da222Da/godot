@@ -12,7 +12,6 @@
 
 #### 内置节点：
 
--   [CanvasItem: 画布节点](../nodes/canvasItem.md)
 -   [Sprite2D: 显示 2D 纹理的节点](../nodes/sprite2d.md)
 -   [TileMap && TileSet: 瓦片地图](../nodes/tilemap/index.md)
 -   [Camera2D 摄像机](../nodes/camera2d.md)
