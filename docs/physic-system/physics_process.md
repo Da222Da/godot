@@ -1,6 +1,6 @@
 <PageHeader content="在 Godot 中，内置函数 _physics_process() 和 _process() 有什么区别？" />
 
-> `_physics_process()` 会在 `_process()` 之前被执行，并且 `delta 物理时间步长`是固定的。
+> `_physics_process(p_delta)` 会在 `_process()` 之前被执行，并且 `p_delta 物理时间步长`是固定的。
 
 ::: tip
 
