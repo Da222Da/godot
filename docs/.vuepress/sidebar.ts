@@ -8,6 +8,7 @@ export default {
         { text: "2D 图形", link: "/2D-graphics/" },
         { text: "GDScript 脚本", link: "/gdscript/" },
         { text: "用户输入", link: "/input-handling/" },
+        { text: "用户界面", link: "/ui/" },
         { text: "动画", link: "/animation/" },
         { text: "物理系统", link: "/physic-system/" },
         { text: "粒子系统", link: "/particle/" },

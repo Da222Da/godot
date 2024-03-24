@@ -15,6 +15,7 @@
 
 -   [场景与节点之间的关系？](./what-scene.md)
 -   [如何对场景、节点进行增删改查？](./edit-scene-and-node.md)
+-   [如何切换场景，并添加过渡效果？](./change-scene.md)
 
 #### 内置节点
 
