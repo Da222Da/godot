@@ -1,4 +1,4 @@
-# 附录
+# 项目设置
 
 ::: tip 项目设置经验
 
@@ -23,13 +23,5 @@
       - 指点
         1. 用鼠标模拟触摸`默认 false`
         2. 用触摸模拟鼠标`默认 true`
-
-:::
-
-::: warning 额外说明
-
-- [Godot 是什么？](./extra/what-godot.md)
-- [如何安装 Godot 游戏引擎？](./extra/install.md)
-- [如何创建一个游戏项目？](./extra/create-project.md)
 
 :::
