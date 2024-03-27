@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-291d9cae","path":"/input-handling/custom-input-map.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1707488498000},"filePathRelative":"input-handling/custom-input-map.md"}');export{t as data};

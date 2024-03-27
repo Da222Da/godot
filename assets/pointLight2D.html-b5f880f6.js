@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c0e4499e","path":"/nodes/light/pointLight2D.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1710237633000},"filePathRelative":"nodes/light/pointLight2D.md"}');export{t as data};

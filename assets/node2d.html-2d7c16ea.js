@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b6a6eda4","path":"/nodes/node2d.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709805426000},"filePathRelative":"nodes/node2d.md"}');export{e as data};

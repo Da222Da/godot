@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7f7357a8","path":"/game-copy/space-shooter.html","title":"太空射手","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1705917311000},"filePathRelative":"game-copy/space-shooter.md"}');export{e as data};

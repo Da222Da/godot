@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-17e179c6","path":"/gdscript/fps-deltatime.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1711525549000},"filePathRelative":"gdscript/fps-deltatime.md"}');export{t as data};

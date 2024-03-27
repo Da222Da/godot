@@ -1,0 +1,11 @@
+import{_ as s,r as a,o as e,c as t,d as o,f as c}from"./app-546c4c18.js";const p={},l=c(`<p>在编程语言中，标识符就是变量、函数、类的名称，如 <code>Player</code>、<code>player_name</code>、<code>player_health</code>、<code>_ready</code>。然而标识符在命名时需要遵循特定的规则，如不能以数字开头，不能包含特殊字符等。</p><p>至于，关键字就是编程语言中具有特定的含义的单词，如 <code>var</code>、<code>func</code>、<code>extends</code> 等。示例代码如下：</p><div class="language-gdscript line-numbers-mode" data-ext="gdscript"><pre class="language-gdscript"><code><span class="token keyword">extends</span> <span class="token class-name">Node</span>
+
+<span class="token keyword">class_name</span> <span class="token class-name">Player</span>
+
+<span class="token keyword">var</span> player_name <span class="token operator">=</span> <span class="token string">&quot;Alice&quot;</span>
+<span class="token keyword">var</span> player_health <span class="token operator">=</span> <span class="token number">100</span>
+
+<span class="token keyword">func</span> \\<span class="token function">_ready</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Player name: &quot;</span> <span class="token operator">+</span> player_name<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Player health: &quot;</span> <span class="token operator">+</span> <span class="token function">str</span><span class="token punctuation">(</span>player_health<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3);function i(r,d){const n=a("PageHeader");return e(),t("div",null,[o(n,{content:"在编程语言中，标识符与关键字是什么？"}),l])}const k=s(p,[["render",i],["__file","identifier.html.vue"]]);export{k as default};

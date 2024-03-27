@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-0db65f86","path":"/nodes/parallaxbackground.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709805426000},"filePathRelative":"nodes/parallaxbackground.md"}');export{a as data};

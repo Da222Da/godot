@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9830890a","path":"/nodes/physics/area2d.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1710920006000},"filePathRelative":"nodes/physics/area2d.md"}');export{e as data};

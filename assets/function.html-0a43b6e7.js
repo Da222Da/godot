@@ -1,0 +1,1 @@
+import{_ as n,r as o,o as t,c,d as r}from"./app-546c4c18.js";const a={};function _(s,l){const e=o("PageHeader");return t(),c("div",null,[r(e,{content:"函数"})])}const d=n(a,[["render",_],["__file","function.html.vue"]]);export{d as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5577befc","path":"/configs/game-window-design.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1711525549000},"filePathRelative":"configs/game-window-design.md"}');export{e as data};

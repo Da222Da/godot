@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b64c54d8","path":"/nodes/vector2-api.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709805426000},"filePathRelative":"nodes/vector2-api.md"}');export{e as data};

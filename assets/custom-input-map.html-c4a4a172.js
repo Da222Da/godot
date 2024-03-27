@@ -1,0 +1,1 @@
+import{_ as t,r as o,o as a,c as n,d as c,e as r}from"./app-546c4c18.js";const i={};function l(s,_){const e=o("PageHeader");return a(),n("div",null,[c(e,{content:"如何自定义输入映射？"}),r(' <BilibiliTutorial :video-id="1950208333"></BilibiliTutorial> ')])}const d=t(i,[["render",l],["__file","custom-input-map.html.vue"]]);export{d as default};

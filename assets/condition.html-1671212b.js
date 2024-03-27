@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2b67ebf4","path":"/gdscript/grammar/condition.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1711525549000},"filePathRelative":"gdscript/grammar/condition.md"}');export{t as data};

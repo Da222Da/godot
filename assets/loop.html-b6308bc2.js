@@ -1,0 +1,1 @@
+import{_ as o,r as t,o as n,c,d as r}from"./app-546c4c18.js";const a={};function _(s,l){const e=t("PageHeader");return n(),c("div",null,[r(e,{content:"循环语句"})])}const m=o(a,[["render",_],["__file","loop.html.vue"]]);export{m as default};

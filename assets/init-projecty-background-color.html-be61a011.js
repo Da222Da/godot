@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2983fdee","path":"/configs/init-projecty-background-color.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1711525549000},"filePathRelative":"configs/init-projecty-background-color.md"}');export{t as data};

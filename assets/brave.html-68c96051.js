@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c446005e","path":"/game-copy/brave.html","title":"勇者传说","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1705571331000},"filePathRelative":"game-copy/brave.md"}');export{e as data};

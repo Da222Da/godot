@@ -1,0 +1,1 @@
+import{_ as o,r as n,o as s,c as r,d as a,a as e}from"./app-546c4c18.js";const c="/godot/images/reuse-font-theme.png",_={},m=e("p",null,[e("img",{src:c,alt:"节点与脚本的关系"})],-1);function l(d,f){const t=n("PageHeader");return s(),r("div",null,[a(t,{content:"在游戏中，如何复用文字主题预设？"}),m])}const p=o(_,[["render",l],["__file","reuse-font-theme.html.vue"]]);export{p as default};

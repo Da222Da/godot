@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7f046502","path":"/physic-system/body.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1709805426000},"filePathRelative":"physic-system/body.md"}');export{t as data};
