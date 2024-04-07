@@ -1,18 +1,23 @@
 <PageHeader content="@onready 修饰符" />
 
-使用 `@onready 修饰符` 标记过的变量会在在调用 `Node._ready()` 之前，才进行赋值。这可以确保在\_ready()函数调用之前，变量或引用已经准备好使用，避免了在节点加载时出现空引用的问题。
+使用 `@onready 修饰符` 标记过的语句，会在场景节点准备好的时候，才会执行。
 
 ```gdscript
 extends Node
 
-@onready var label = get_node("Label")
+# 报错：在场景节点没有准备好之前，`$` 不会返回场景树中的节点
+# var label = $Label
 
+@onready var label = $Label
+
+# @onready 相当于 _ready() 函数
 func _ready():
-    label.text = "Hello, World!"
+    var label = $Label
 ```
 
-::: danger \_ready() 是什么？
+::: danger \_ready() 函数是什么？
 
-\_ready()函数是一个特殊的生命周期函数，在 Godot 中用于在节点准备好了并且所有子节点都已加载后调用。通常用于初始化节点的状态、设置初始值、连接信号等操作。这个函数是一个常用的起始点，用于在节点准备好时执行必要的初始化操作。
+\_ready()函数是一个特殊的生命周期函数。
 
+当场景树中所有的节点都加载好了的时候，Godot 引擎就会自动执行\_ready()函数。
 :::
