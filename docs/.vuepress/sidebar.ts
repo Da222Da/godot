@@ -7,20 +7,14 @@ export default {
         { text: "GDScript 脚本", link: "/gdscript/" },
         { text: "用户输入", link: "/input-handling/" },
         { text: "用户界面", link: "/ui/" },
-        { text: "物理系统", link: "/physic-system/" },
+        { text: "物理引擎", link: "/physic-system/" },
         { text: "声音", link: "/audio/" },
         // { text: "文件系统", link: "/" },
         { text: "动画", link: "/animation/" },
-        { text: "粒子系统", link: "/particle/" },
+        { text: "粒子效果", link: "/particle/" },
         { text: "光照与阴影", link: "/light/" },
         { text: "插件", link: "/plugins/" },
         { text: "项目设置", link: "/configs/" },
     ],
-    "/game-copy/": [
-        {
-            text: "简介",
-            link: "/game-copy/",
-        },
-        "/game-copy/space-shooter.md",
-    ],
+    "/game-copy/": [],
 };
