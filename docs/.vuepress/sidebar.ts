@@ -1,6 +1,6 @@
 export default {
     "/": [
-        { text: "简介", link: "/" },
+        { text: "初心", link: "/" },
         { text: "快速上手", link: "/quickstart/" },
         { text: "场景系统", link: "/scene-system/" },
         { text: "2D 图形", link: "/2D-graphics/" },
@@ -16,5 +16,5 @@ export default {
         { text: "插件", link: "/plugins/" },
         { text: "项目设置", link: "/configs/" },
     ],
-    "/game-copy/": [],
+    "/guide/": [],
 };

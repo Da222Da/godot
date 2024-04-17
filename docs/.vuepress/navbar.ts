@@ -4,8 +4,8 @@ export default [
         link: "/",
     },
     {
-        text: "游戏复刻",
-        link: "/game-copy/",
+        text: "Godot 上手指南",
+        link: "/guide/",
     },
     {
         text: "GitHub",
