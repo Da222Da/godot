@@ -4,6 +4,7 @@ import VideoIframe from "./src/VideoIframe.vue";
 import VideoCard from "./src/VideoCard.vue";
 import Map from "./src/Map.vue";
 import PageHeader from "./src/PageHeader.vue";
+import BasicConcept from "./src/BasicConcept.vue";
 
 export default {
   install: (app) => {
@@ -14,5 +15,6 @@ export default {
     app.component("VideoCard", VideoCard);
     app.component("Map", Map);
     app.component("PageHeader", PageHeader);
+    app.component("BasicConcept", BasicConcept);
   },
 };

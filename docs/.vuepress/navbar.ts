@@ -4,7 +4,7 @@ export default [
         link: "/",
     },
     {
-        text: "Godot 上手指南",
+        text: "Godot 上手指南图",
         link: "/guide/",
     },
     {
