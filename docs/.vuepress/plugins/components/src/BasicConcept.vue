@@ -2,7 +2,7 @@
     <el-card class="box-card">
         <template #header>
             <div class="card-header">
-                <span>关键知识点</span>
+                <span>{{ title }}</span>
             </div>
         </template>
         <span v-for="(item, index) in data">
@@ -28,6 +28,10 @@
 export default {
     name: "BasicConcept",
     props: {
+        title: {
+            type: String,
+            default: "知识体系",
+        },
         data: {
             type: Array,
             default: [],
