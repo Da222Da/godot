@@ -12,7 +12,7 @@
 
 #### 内置节点：
 
--   3D 模型：`CSGBox3D 立方体`、`MeshInstance3D 网格实例`
+-   3D 模型：`Node3D 最基础的3D对象`、`CSGBox3D 立方体`、`MeshInstance3D 网格实例`
 -   光照：`DirectionalLight3D 太阳光`、`WorldEnvironment 世界环境`
 -   摄像机：`Camera3D 摄像机`
 

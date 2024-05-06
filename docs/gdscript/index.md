@@ -22,7 +22,6 @@
 ::: danger 常见问题：
 
 -   [\_process(delta) 内置函数中，参数 delta 是什么意思？](./fps-deltatime.md)
--   [如何连接信号、自定义信号？](./grammar/signal.md)
 
 :::
 
