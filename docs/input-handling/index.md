@@ -7,7 +7,7 @@
 ::: tip 用户输入 —— 知识结构
 
 1. Input 单例类: 用于检测和响应各种输入事件
-    - `Input.is_action_pressed(action)` 监听键盘的某键是否被按下
+    - `Input.is_action_pressed(action)` 如果正在按下指定的输入动作，则返回 true。
 
 :::
 
