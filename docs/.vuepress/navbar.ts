@@ -37,7 +37,7 @@ export default [
                     { text: "Vue", link: "https://cn.vuejs.org/" },
                     {
                         text: "Element-plus",
-                        link: "https://element-plus.gitee.io/zh-CN/",
+                        link: "https://element-plus.org/",
                     },
                 ],
             },
