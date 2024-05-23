@@ -35,6 +35,9 @@
     -   `RigidBody3D 刚体节点`，靠外力才能被移动的 3D 物理体
         -   `apply_force() & apply_central_force()` 对实体施加一个定向力`是否影响旋转?`
         -   `apply_torque()` 施加旋转力
+        -   碰撞检测：
+            -   `contact_monitor` 是否开启接触监控
+            -   `max_contacts_reported` 指定物理引擎在每帧中处理的最大接触点数量，从而影响物理模拟的准确性和性能。
 
 :::
 

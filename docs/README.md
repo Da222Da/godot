@@ -1,4 +1,4 @@
-::: tip 最初的愿景
+::: tip 愿景
 
 本站的目的是为了介绍如何使用 [Godot 引擎](https://godotengine.org) 进行游戏开发的。
 
