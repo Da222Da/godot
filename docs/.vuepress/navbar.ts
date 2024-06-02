@@ -1,12 +1,12 @@
 export default [
     {
-        text: "基础知识",
+        text: "首页",
         link: "/",
     },
-    {
-        text: "Godot 上手指南图",
-        link: "/guide/",
-    },
+    // {
+    //     text: "Godot 上手指南图",
+    //     link: "/guide/",
+    // },
     {
         text: "GitHub",
         link: "https://github.com/Da222Da/godot",

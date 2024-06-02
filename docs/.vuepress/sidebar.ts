@@ -1,6 +1,6 @@
 export default {
     "/": [
-        { text: "首页", link: "/" },
+        { text: "介绍", link: "/" },
         { text: "快速上手", link: "/quickstart/" },
         { text: "场景系统", link: "/scene-system/" },
         { text: "2D 图形", link: "/2D-graphics/" },

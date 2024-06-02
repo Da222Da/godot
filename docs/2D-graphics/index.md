@@ -4,18 +4,53 @@
 
 通过在 2D 节点上设置属性、应用动画和物理效果，您可以实现二维图形的移动、旋转、缩放和碰撞检测等操作。Godot 还提供了丰富的 2D 绘图工具和函数，使您能够绘制形状、绘制文本、创建粒子效果等，以实现各种视觉效果和交互功能。
 
-::: tip 基础知识
+<BasicConcept :data='[
+  { title: "Sprite2D 节点", content: "用于显示 2D 图像。" },
+  { title: "AnimationSprite2D 节点", content: "用于播放动画帧。" },
+  { title: "TileMap 瓦片地图节点", content: "帮助我们快速地创建、并管理 2D 游戏地图。" },
+  { title: "Camera2D 摄像机节点", content: "摄像机的拍摄区域，就是游戏的可视区域。" },
+  { title: "RayCast2D 射线节点", content: "2D 空间中的射线，用于查找第一个相交的 CollisionObject2D。" },
+  ]' 
+/>
 
-#### 常见问题：
+<!-- -   [ParallaxBackground 视差背景](../nodes/parallaxbackground.md)
+-   [Marker2D 标记特殊位置](../nodes/marker2d.md) -->
+
+::: danger 常见问题：
 
 -   [什么是二维向量及其运算方式?](./vector2.md)
 
-#### 内置节点：
+:::
 
--   [Sprite2D: 显示 2D 纹理的节点](../nodes/sprite2d.md)
--   [TileMap && TileSet: 瓦片地图](../nodes/tilemap/index.md)
--   [Camera2D 摄像机](../nodes/camera2d.md)
--   [ParallaxBackground 视差背景](../nodes/parallaxbackground.md)
--   [Marker2D 标记特殊位置](../nodes/marker2d.md)
+::: tip 2D 图形 - 知识结构
+
+-   **Sprite2D 显示 2D 图像**
+    -   `texture 属性` 加载你要绘制的纹理资源
+    -   `region属性` 编辑图片的显示区域
+        -   `region_enabled` 是否从较大的图集纹理中裁剪纹理。
+        -   `region_rect` 设置裁剪纹理的区域。
+-   **AnimationSprite2D 播放动画帧**
+    -   `flip_h 属性` 是否将纹理进行水平翻转。
+-   **TileMap 瓦片地图**
+    -   `tile_set 属性` 指定瓦片集资源
+        -   `physics layers` 给瓦片设置物理层与遮罩层
+    -   `layers` 添加地图层级
+-   **Camera2D 摄像机**
+    -   `Zoom 视图缩放`可以放大或缩小相机视图中的内容。
+    -   `Offset 相对偏移量` 用于更改相机中心位置。
+    -   `Limits 限制` 用于控制摄像机拍摄的范围。
+        -   `left & right & top & bottom` 极限值`(相机会在抵达该值时停止移动)`
+        -   `limit_smoothed` 碰到极限值的时候，开启平滑过渡效果。
+    -   `Position Smoothing 位置平滑` 可以给摄像机添加平滑过渡的效果`慢慢加速、慢慢停下`。
+        -   `position-smoothing-enabled` 是否启用过渡效果
+        -   `position-smoothing-speed` 设置平滑速度
+    -   `Drag` 角色自由活动区域设置`在该区域内移动，相机不会跟随角色`
+        -   `drag-horizontal-enabled` 是否开启水平方向上活动区域
+        -   `drag-vertical-enabled` 是否开启垂直方向上活动区域
+    -   `Editor` 摄像机辅助线
+        -   `editor_draw_screen`是否开启绘制摄像机拍摄范围的辅助线
+        -   `editor_draw_drag_margin` 是否开启角色自由移动范围的辅助线
+-   **RayCast2D 射线**
+    -   `is_colliding()` 是否有对象与射线的向量相交
 
 :::

@@ -8,6 +8,8 @@
 
 1. Input 单例类: 用于检测和响应各种输入事件
     - `Input.is_action_pressed(action)` 如果正在按下指定的输入动作，则返回 true。
+    - `Input.is_action_just_pressed(action)` 只在用户按下按钮的那一帧中为 true。
+    - `Input.get_axis(a1, a2)`通过指定两个动作来获取轴的输入`a1 = -1 & a2 = 1 & d=0`。
 
 :::
 

@@ -3,8 +3,7 @@
 物理引擎可以看做是 Godot 引擎一个内置系统，它负责处理游戏中的物理模拟，包括但不限于刚体的运动、碰撞检测、力学效应（如重力和摩擦力）以及其他物理现象。使得开发者能够创建出具有真实物理行为的游戏世界。
 
 <BasicConcept :data='[
-  { title: "物理模拟", content: "是指物理引擎在模拟现实世界中的物理现象和物体行为的过程。" },
-  { title: "物理体 Physics Body", content: "是指能够与 Godot 物理系统进行交互的节点对象。"},
+  { title: "物理体 PhysicsBody", content: "是指能够与 Godot 物理系统进行交互的节点对象。"},
   { title: "碰撞形状 CollisionShape", content: "指定物理体的碰撞检测区域。" },
   { title: "碰撞层 Collision Layer", content: "指定该物理体所属的碰撞图层。", type: "danger" },
   { title: "遮罩 Collision Mask", content: "指定该物理体可以与哪些碰撞图层发生碰撞。", type: "danger" },
@@ -16,17 +15,30 @@
   ]' 
 />
 
+::: danger 常见问题
+
+-   [在 Godot 中，\_physics_process() 和 \_process() 有什么区别？](./physics_process.md)
+
+:::
+
 ::: tip 物理引擎 - 知识体系
 
 #### 2D 场景相关
 
 -   `Area2D 节点`，创建 2D 碰撞检测区域
+    -   `body_entered 信号` 物体进入该区域的内置信号
 -   PhysicsBody2D 2D 物理体
     -   `CharacterBody2D 运动体节点`，创建“靠代码控制来移动 2D 物理体”
+        -   `velocity` 当前速度向量，调用 move_and_slide() 期间会进行使用并修改。
+        -   `is_on_floor()` 判断物体是否与地板发生了碰撞。
+        -   `Ordering排序 -> Z Index 索引` 用于控制节点的渲染顺序。
     -   `RigidBody2D 刚体节点`，靠外力才能被移动的 2D 物理体
     -   `StaticBody2D 静态体节点`，创建无法被移动的 2D 物理体。
+    -   `AnimatableBody2D 动画物理体` 配合`AnimationPlayer`可以做动画的 2D 物理体。
 -   CollisionShape 碰撞形状
     -   `CollisionShape2D 节点`， 定义二维碰撞形状
+        -   `shape.WorldBoundaryShape2D` 用于创建无限延伸的地面形状。
+        -   `one_way_collision` 是否启用单向碰撞。
     -   `CollisionPolygon2D 节点` 用于定义二维多边形碰撞形状。
 
 #### 3D 场景相关
@@ -38,11 +50,5 @@
         -   碰撞检测：
             -   `contact_monitor` 是否开启接触监控
             -   `max_contacts_reported` 指定物理引擎在每帧中处理的最大接触点数量，从而影响物理模拟的准确性和性能。
-
-:::
-
-::: danger 常见问题
-
--   [在 Godot 中，\_physics_process() 和 \_process() 有什么区别？](./physics_process.md)
 
 :::
