@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bxbo1v0m14eo7"]
+[gd_scene load_steps=15 format=3 uid="uid://bxbo1v0m14eo7"]
 
 [ext_resource type="PackedScene" uid="uid://buvnu1vlj5vji" path="res://scenes/player.tscn" id="1_f82l6"]
 [ext_resource type="Texture2D" uid="uid://dis0mmvym1qot" path="res://assets/sprites/world_tileset.png" id="2_srwb0"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://3fmctlorwfa6" path="res://scenes/slime.tscn" id="6_l8213"]
 [ext_resource type="FontFile" uid="uid://c68jj3sr1vlp1" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="7_ojvlj"]
 [ext_resource type="Script" path="res://scripts/UI.gd" id="7_swja3"]
-[ext_resource type="AudioStream" uid="uid://cuyx2tkmdhnh6" path="res://assets/music/time_for_adventure.mp3" id="9_h40u5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ci7j4"]
 texture = ExtResource("2_srwb0")
@@ -520,7 +519,3 @@ offset_bottom = 23.0
 theme_override_fonts/font = ExtResource("7_ojvlj")
 theme_override_font_sizes/font_size = 16
 text = "金币：0"
-
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_h40u5")
-autoplay = true

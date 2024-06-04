@@ -1,6 +1,4 @@
-<PageHeader content="autoload 自动加载" />
-
-> autoload 自动加载，就是在全局范围内设置可以共同访问的游戏场景或脚本。
+<PageHeader content="autoload 自动加载脚本文件?" />
 
 #### 第一步：创建脚本文件，并在项目设置中完成自动加载设置
 
