@@ -19,21 +19,47 @@ enum Direction {
     UP,
     DOWN,
     LEFT,
-    RIGHT
+    RIGHT = -1
 }
+# 枚举，相当于声明常量
+# const UP = 0
+# const DOWN = 1
+# const LEFT = 2
+# const RIGHT = -1
 
-# 二维向量
-var player_position = Vector2(10, 20)
+var my_direction = Direction.UP
 
+# 向量
+var my_vector2 = Vector2(1.0, 2.0) # 二维向量
+var my_vector3 = Vector3(1.0, 2.0, 3.0)  # 三维向量
+
+# 颜色
+var my_color = Color(1.0, 0.0, 0.0, 1.0)
 ```
 
 ## 2.变量
 
+在 Godot 中，变量可以存储任何类型的数据，并且可以在程序运行时更改其值。
+
 ### 2-1.变量声明
 
 ```gdscript
-var player_name = "Alice" # 变量可以在程序运行时更改
-const MAX_HEALTH = 100     # 常量值在声明后不能被修改
+# 动态类型声明
+var my_var = 15
+my_var = "Hello, World!" # 动态类型声明允许在变量声明后更改其类型
+
+# 静态类型声明
+var num:int = 15
+var num := 15 # 类型推断，自动推断变量类型
+
+# 常量声明
+const MAX_HEALTH:int = 100  # 常量值在声明后不能被修改
+
+# 局部变量声明
+func _ready():
+    var my_local_var = 15 # 局部变量只能在函数或方法内部使用
+    print(my_local_var)
+
 ```
 
 ### 2-2. 变量操作
@@ -124,13 +150,25 @@ match state:
 # 使用for循环打印数字1到5
 for i in range(1, 6):
     print(i)
+
+# while循环
+var i = 0
+while i < 5:
+    if i == 1:
+        i += 1
+        continue # 跳过本次循环，继续下一次循环
+           if i == 3:
+        break # 跳出循环
+    print(i)
+    i += 1
+
 ```
 
 ## 4.函数
 
 ```gdscript
 # 定义函数
-func fn(bool):
+func fn(bool: boolean) -> void:
     if bool: print("Yes")
     else:
         for i in range(1, 6):
@@ -138,6 +176,7 @@ func fn(bool):
 
 # 调用函数
 fn(true)
+
 ```
 
 ## 5.类
