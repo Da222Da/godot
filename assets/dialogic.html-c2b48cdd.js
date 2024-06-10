@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3002cc2f","path":"/plugins/dialogic.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1710755816000},"filePathRelative":"plugins/dialogic.md"}');export{t as data};

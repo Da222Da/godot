@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-21390ecf","path":"/gdscript/set-node-attribute.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717563698000},"filePathRelative":"gdscript/set-node-attribute.md"}');export{t as data};

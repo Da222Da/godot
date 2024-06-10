@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1491bada","path":"/file/","title":"文件系统","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717472417000},"filePathRelative":"file/index.md"}');export{e as data};

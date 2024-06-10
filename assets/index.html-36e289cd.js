@@ -1,0 +1,1 @@
+import{_ as t,r as n,o as s,c as a,d as c,a as e}from"./app-ed0390b9.js";const r="/godot/assets/loop-3f2976a5.png",_={},l=e("p",null,[e("img",{src:r,alt:"如何循环播放一段音乐?"})],-1);function d(i,m){const o=n("PageHeader");return s(),a("div",null,[c(o,{content:"如何循环播放一段音乐?"}),l])}const f=t(_,[["render",d],["__file","index.html.vue"]]);export{f as default};

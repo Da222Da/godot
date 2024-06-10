@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-724b9859","path":"/nodes/physics/rigidbody2d.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1710920006000},"filePathRelative":"nodes/physics/rigidbody2d.md"}');export{e as data};

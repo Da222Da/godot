@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-a6726324","path":"/gdscript/","title":"GDScript 编程语言","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1718028993000},"filePathRelative":"gdscript/index.md"}');export{t as data};

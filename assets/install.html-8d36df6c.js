@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0d57aa3f","path":"/quickstart/install.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1711525549000},"filePathRelative":"quickstart/install.md"}');export{t as data};

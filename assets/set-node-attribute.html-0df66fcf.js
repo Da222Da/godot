@@ -1,0 +1,8 @@
+import{_ as n,r as s,o as a,c as t,d as o,f as c}from"./app-ed0390b9.js";const d={},l=c(`<p>假设你创建如下 2 个节点：</p><div class="language-markdown line-numbers-mode" data-ext="md"><pre class="language-markdown"><code>|- Node [script.gd]
+|---- Lable
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>你可以通过以下方式修改 <code>Lable 节点</code> 的<code>文本属性 text</code> 和<code>颜色属性 modulate</code>:</p><div class="language-gdscript line-numbers-mode" data-ext="gdscript"><pre class="language-gdscript"><code><span class="token keyword">extends</span> <span class="token class-name">Node</span>
+
+<span class="token keyword">func</span> <span class="token function">_ready</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token variable">$Label</span><span class="token punctuation">.</span>text <span class="token operator">=</span> <span class="token string">&quot;Hello World&quot;</span>
+	<span class="token variable">$Label</span><span class="token punctuation">.</span>modulate <span class="token operator">=</span> Color<span class="token punctuation">.</span><span class="token constant">AQUAMARINE</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4);function i(p,r){const e=s("PageHeader");return a(),t("div",null,[o(e,{content:"GdScript 脚本如何修改节点属性？"}),l])}const m=n(d,[["render",i],["__file","set-node-attribute.html.vue"]]);export{m as default};

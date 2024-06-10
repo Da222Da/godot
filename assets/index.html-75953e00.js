@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-479ed27c","path":"/2D-graphics/","title":"2D 图形","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1718028993000},"filePathRelative":"2D-graphics/index.md"}');export{e as data};

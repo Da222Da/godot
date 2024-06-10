@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fa742574","path":"/scene-system/","title":"场景系统","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717396714000},"filePathRelative":"scene-system/index.md"}');export{e as data};

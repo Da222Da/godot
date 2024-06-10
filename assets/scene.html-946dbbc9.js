@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7a33f260","path":"/configs/autoload/scene.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717472417000},"filePathRelative":"configs/autoload/scene.md"}');export{e as data};

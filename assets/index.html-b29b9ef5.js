@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-383b87be","path":"/3D-graphics/","title":"3D 图形","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1716300654000},"filePathRelative":"3D-graphics/index.md"}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as i,r as e,o as l,c as a,d as o}from"./app-ed0390b9.js";const c={};function r(s,_){const t=e("PageHeader"),n=e("BilibiliTutorial");return l(),a("div",null,[o(t,{content:"如何连接 Godot 自带的内置信号？"}),o(n,{"video-id":1700665191})])}const m=i(c,[["render",r],["__file","signal-builtin.html.vue"]]);export{m as default};

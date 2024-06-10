@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0a609d8e","path":"/input-handling/","title":"用户输入","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717563698000},"filePathRelative":"input-handling/index.md"}');export{t as data};

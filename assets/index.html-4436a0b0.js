@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f03efbdc","path":"/light/","title":"光照与阴影","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1711525549000},"filePathRelative":"light/index.md"}');export{t as data};

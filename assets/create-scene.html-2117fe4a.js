@@ -1,0 +1,1 @@
+import{_ as n,r as e,o as r,c as a,d as o}from"./app-ed0390b9.js";const i={};function l(_,s){const t=e("PageHeader"),c=e("BilibiliTutorial");return r(),a("div",null,[o(t,{content:"如何创建一个游戏场景？"}),o(c,{"video-id":621037418})])}const m=n(i,[["render",l],["__file","create-scene.html.vue"]]);export{m as default};

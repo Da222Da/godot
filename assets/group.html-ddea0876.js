@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-391b9ea8","path":"/gdscript/group.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717337585000},"filePathRelative":"gdscript/group.md"}');export{t as data};

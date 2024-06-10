@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-25fe9a2e","path":"/nodes/light/pointOccluder2D.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1710237633000},"filePathRelative":"nodes/light/pointOccluder2D.md"}');export{e as data};

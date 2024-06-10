@@ -1,0 +1,1 @@
+import{_ as o,r as s,o as n,c,d as a,a as e}from"./app-ed0390b9.js";const r="/godot/assets/bus-c2702612.png",_={},d=e("p",null,[e("img",{src:r,alt:"bus"})],-1);function l(i,m){const t=s("PageHeader");return n(),c("div",null,[a(t,{content:"如何添加、设置音频总线？"}),d])}const u=o(_,[["render",l],["__file","index.html.vue"]]);export{u as default};

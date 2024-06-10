@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-98909d10","path":"/game-copy/","title":"游戏复刻","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1713275786000},"filePathRelative":"game-copy/index.md"}');export{e as data};

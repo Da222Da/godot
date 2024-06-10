@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-75c2f352","path":"/audio/","title":"声音","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1717472417000},"filePathRelative":"audio/index.md"}');export{e as data};

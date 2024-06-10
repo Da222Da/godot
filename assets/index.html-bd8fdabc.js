@@ -1,0 +1,1 @@
+import{_ as o,r as n,o as c,c as s,d as a,a as e}from"./app-ed0390b9.js";const r="/godot/assets/img-d1c253c0.png",_={},d=e("p",null,[e("img",{src:r,alt:"添加新的输入动作"})],-1);function l(i,m){const t=n("PageHeader");return c(),s("div",null,[a(t,{content:"如何添加新的输入动作？"}),d])}const f=o(_,[["render",l],["__file","index.html.vue"]]);export{f as default};
