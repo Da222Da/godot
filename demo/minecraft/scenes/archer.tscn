@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://du74lka4m6wy1"]
+
+[ext_resource type="Script" path="res://scripts/archer.gd" id="1_nwbxb"]
+[ext_resource type="Texture2D" uid="uid://8s1qut8vvo5p" path="res://assets/archer/idle.png" id="1_wgotb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ol81"]
+atlas = ExtResource("1_wgotb")
+region = Rect2(0, 0, 186, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7e52"]
+atlas = ExtResource("1_wgotb")
+region = Rect2(186, 0, 186, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq1xe"]
+atlas = ExtResource("1_wgotb")
+region = Rect2(372, 0, 186, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgt41"]
+atlas = ExtResource("1_wgotb")
+region = Rect2(558, 0, 186, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xner4"]
+atlas = ExtResource("1_wgotb")
+region = Rect2(744, 0, 186, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yonif"]
+atlas = ExtResource("1_wgotb")
+region = Rect2(930, 0, 186, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f331a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ol81")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7e52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hq1xe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgt41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xner4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yonif")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bni4j"]
+radius = 6.0
+height = 18.0
+
+[node name="Archer" type="CharacterBody2D"]
+script = ExtResource("1_nwbxb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(61, -25)
+sprite_frames = SubResource("SpriteFrames_f331a")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.432277
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -9)
+shape = SubResource("CapsuleShape2D_bni4j")

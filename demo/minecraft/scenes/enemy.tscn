@@ -1,0 +1,92 @@
+[gd_scene load_steps=13 format=3 uid="uid://bxxnx0bun0jj8"]
+
+[ext_resource type="Texture2D" uid="uid://dswx741o4xlk0" path="res://assets/Ball and Chain Bot/run.png" id="1_75rqe"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_mnp7r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vehv"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 0, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8y4x5"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 39, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0exu7"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 78, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77es2"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 117, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0pyg"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 156, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oouhi"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 195, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e4nu"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 234, 126, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mx5u"]
+atlas = ExtResource("1_75rqe")
+region = Rect2(0, 273, 126, 39)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aoggi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vehv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8y4x5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0exu7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77es2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0pyg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oouhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e4nu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mx5u")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c31su"]
+radius = 8.0
+height = 28.0
+
+[node name="Enemy" type="CharacterBody2D"]
+position = Vector2(0, 2)
+script = ExtResource("1_mnp7r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -15)
+sprite_frames = SubResource("SpriteFrames_aoggi")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.986498
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("CapsuleShape2D_c31su")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_right = 35.0
+offset_bottom = 27.0

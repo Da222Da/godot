@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://br62jtcv20au2"]
+
+[ext_resource type="PackedScene" uid="uid://du74lka4m6wy1" path="res://scenes/archer.tscn" id="1_r27f2"]
+[ext_resource type="PackedScene" uid="uid://bxxnx0bun0jj8" path="res://scenes/enemy.tscn" id="2_jqajf"]
+
+[node name="World" type="Node2D"]
+
+[node name="Archer" parent="." instance=ExtResource("1_r27f2")]
+position = Vector2(116, 363)
+scale = Vector2(5, 5)
+
+[node name="Timer" type="Timer" parent="Archer"]
+unique_name_in_owner = true
+
+[node name="Enemy" parent="." instance=ExtResource("2_jqajf")]
+position = Vector2(1076, 388)
+scale = Vector2(5, 5)
