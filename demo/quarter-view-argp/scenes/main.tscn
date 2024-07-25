@@ -4,10 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://bvjvy7dba8vdw" path="res://scenes/tree.tscn" id="2_v17aa"]
 
 [node name="Main" type="Node2D"]
+
+[node name="YSort" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="Player" parent="." instance=ExtResource("1_andpr")]
-position = Vector2(27, 210)
+[node name="Player" parent="YSort" instance=ExtResource("1_andpr")]
+position = Vector2(67, 104)
 
-[node name="Tree" parent="." instance=ExtResource("2_v17aa")]
-position = Vector2(162, 201)
+[node name="Tree" parent="YSort" instance=ExtResource("2_v17aa")]
+position = Vector2(180, 100)

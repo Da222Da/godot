@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var Accelerated = 200 # 加速度
+@export var Accelerated = 300 # 加速度
 @export var Max_Speed = 200.0 # 最大速度
-@export var Friction = 300 # 摩擦力
+@export var Friction = 500 # 摩擦力
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var animation_State:Variant = animation_tree.get("parameters/playback")
