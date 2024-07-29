@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s7hm6yy4w4yi"
-path="res://.godot/imported/DungeonTileset.png-76225e76a33709c7d0a1d63213639428.ctex"
+uid="uid://bs4ugevcvtafy"
+path="res://.godot/imported/plains.png-545fab771c8ef09ed909f4421ffcd1f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/DungeonTileset.png"
-dest_files=["res://.godot/imported/DungeonTileset.png-76225e76a33709c7d0a1d63213639428.ctex"]
+source_file="res://assets/world/level_1/plains.png"
+dest_files=["res://.godot/imported/plains.png-545fab771c8ef09ed909f4421ffcd1f8.ctex"]
 
 [params]
 

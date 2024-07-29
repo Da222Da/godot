@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds1r77kp2sd74"
-path="res://.godot/imported/fly_anim_f2.png-aeea82f4b997d9c57f41c2b65f4aba42.ctex"
+uid="uid://di30phdlqv635"
+path="res://.godot/imported/grass.png-ca70935d764c32b88d2c95ebe2af4928.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/flying creature/fly_anim_f2.png"
-dest_files=["res://.godot/imported/fly_anim_f2.png-aeea82f4b997d9c57f41c2b65f4aba42.ctex"]
+source_file="res://assets/world/level_1/grass.png"
+dest_files=["res://.godot/imported/grass.png-ca70935d764c32b88d2c95ebe2af4928.ctex"]
 
 [params]
 

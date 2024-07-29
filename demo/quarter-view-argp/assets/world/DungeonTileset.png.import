@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7voemfqtnqh7"
-path="res://.godot/imported/goblin_idle_anim_f4.png-fef97d390e666b84bb6b7925596007b0.ctex"
+uid="uid://s7hm6yy4w4yi"
+path="res://.godot/imported/DungeonTileset.png-fdfd6f9d06bc44eecb20b25701886914.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/goblin/goblin_idle_anim_f4.png"
-dest_files=["res://.godot/imported/goblin_idle_anim_f4.png-fef97d390e666b84bb6b7925596007b0.ctex"]
+source_file="res://assets/world/DungeonTileset.png"
+dest_files=["res://.godot/imported/DungeonTileset.png-fdfd6f9d06bc44eecb20b25701886914.ctex"]
 
 [params]
 

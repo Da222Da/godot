@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpyp74twcncva"
-path="res://.godot/imported/goblin_idle_anim_f3.png-5221a35fd3b6aacb674f65faad4322e0.ctex"
+uid="uid://crcy4uua6h2ea"
+path="res://.godot/imported/fences.png-698cdf0e5a6b35945a47f99c4872165f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/goblin/goblin_idle_anim_f3.png"
-dest_files=["res://.godot/imported/goblin_idle_anim_f3.png-5221a35fd3b6aacb674f65faad4322e0.ctex"]
+source_file="res://assets/world/level_1/fences.png"
+dest_files=["res://.godot/imported/fences.png-698cdf0e5a6b35945a47f99c4872165f.ctex"]
 
 [params]
 

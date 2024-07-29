@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jx5hb1xnmiu4"
-path="res://.godot/imported/goblin_run_anim_f3.png-14de4454123e9b8c73d38c58d4d11a48.ctex"
+uid="uid://ey4ccu17q6gu"
+path="res://.godot/imported/slime.png-db41dcff937baa6fd886cee4a3c00307.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/goblin/goblin_run_anim_f3.png"
-dest_files=["res://.godot/imported/goblin_run_anim_f3.png-14de4454123e9b8c73d38c58d4d11a48.ctex"]
+source_file="res://assets/enemies/slime.png"
+dest_files=["res://.godot/imported/slime.png-db41dcff937baa6fd886cee4a3c00307.ctex"]
 
 [params]
 

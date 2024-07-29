@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdprdkjon106v"
-path="res://.godot/imported/slime_run_anim_f3.png-82d77238ef865bc8508a6a89d10c77dc.ctex"
+uid="uid://dr4m76yjk2t6k"
+path="res://.godot/imported/objects.png-dd242f450cd5565826f7124c524eb957.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies/slime/slime_run_anim_f3.png"
-dest_files=["res://.godot/imported/slime_run_anim_f3.png-82d77238ef865bc8508a6a89d10c77dc.ctex"]
+source_file="res://assets/world/level_1/objects.png"
+dest_files=["res://.godot/imported/objects.png-dd242f450cd5565826f7124c524eb957.ctex"]
 
 [params]
 
