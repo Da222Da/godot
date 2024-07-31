@@ -289,7 +289,6 @@ z_index = 1
 script = ExtResource("1_ghei0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(-1, -18)
 texture = ExtResource("1_wsp5m")
 hframes = 6
@@ -297,7 +296,6 @@ vframes = 10
 region_rect = Rect2(0, 208, 288, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(-3.8147e-06, -4)
 rotation = 1.59523
 shape = SubResource("CapsuleShape2D_rq0mp")

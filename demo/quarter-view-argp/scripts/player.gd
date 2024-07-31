@@ -7,7 +7,19 @@ extends CharacterBody2D
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var animation_State:Variant = animation_tree.get("parameters/playback")
 
+enum {
+	MOVE,
+	ATTACK
+}
+var state = MOVE
+
 func _physics_process(delta: float) -> void:
+	match state:
+		MOVE:
+			move_state(delta)
+
+# 控制移动状态
+func move_state(delta):
 	var direction_x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	var direction_y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	var input_direction = Vector2(direction_x, direction_y).normalized() 
