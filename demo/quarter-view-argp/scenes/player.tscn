@@ -285,18 +285,20 @@ states/Walk/node = SubResource("AnimationNodeBlendSpace2D_uj4oh")
 states/Walk/position = Vector2(507, 109)
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(0, -16)
+z_index = 1
 script = ExtResource("1_ghei0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -3)
+visible = false
+position = Vector2(-1, -18)
 texture = ExtResource("1_wsp5m")
 hframes = 6
 vframes = 10
 region_rect = Rect2(0, 208, 288, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 11)
+visible = false
+position = Vector2(-3.8147e-06, -4)
 rotation = 1.59523
 shape = SubResource("CapsuleShape2D_rq0mp")
 
@@ -307,9 +309,6 @@ libraries = {
 autoplay = "idle"
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_3u38i")
-}
 tree_root = SubResource("AnimationNodeStateMachine_aldyy")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(0, 0)
