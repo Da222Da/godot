@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm1hdgh46icnd"]
+
+[ext_resource type="Texture2D" uid="uid://8os8rt3guvq5" path="res://Textures/dirt_full_new.png" id="1_xy3yr"]
+[ext_resource type="PackedScene" uid="uid://bhtlednnh3iff" path="res://scenes/player.tscn" id="2_2e607"]
+[ext_resource type="PackedScene" uid="uid://d2sgsl24cjkyy" path="res://scenes/enemy.tscn" id="3_qaomb"]
+
+[node name="World" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_xy3yr")
+region_enabled = true
+region_rect = Rect2(0, 0, 4000, 4000)
+
+[node name="Player" parent="." instance=ExtResource("2_2e607")]
+unique_name_in_owner = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="EnemyKolbold" parent="." instance=ExtResource("3_qaomb")]
+position = Vector2(192, -48)
