@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://8os8rt3guvq5" path="res://Textures/dirt_full_new.png" id="1_xy3yr"]
 [ext_resource type="PackedScene" uid="uid://bhtlednnh3iff" path="res://scenes/player.tscn" id="2_2e607"]
-[ext_resource type="PackedScene" uid="uid://d2sgsl24cjkyy" path="res://scenes/enemy.tscn" id="3_qaomb"]
+[ext_resource type="PackedScene" uid="uid://d2sgsl24cjkyy" path="res://scenes/enemys/enemy_kolbold.tscn" id="3_qaomb"]
 
 [node name="World" type="Node2D"]
 

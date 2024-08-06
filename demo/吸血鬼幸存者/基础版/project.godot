@@ -23,6 +23,13 @@ window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
 
+[layer_names]
+
+2d_physics/layer_1="世界 world"
+2d_physics/layer_2="玩家 player"
+2d_physics/layer_3="敌人 enemy"
+2d_physics/layer_4="战利品 loot"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var movement_speed = 50.0
+@export var hp = 10
 @onready var player: CharacterBody2D = %Player
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
@@ -21,3 +22,9 @@ func movement():
 	velocity = direction * movement_speed
 	
 	move_and_slide()
+
+
+func _on_hurt_box_hurt(damage: Variant) -> void:
+	hp -= damage
+	if hp <= 0:
+		queue_free()

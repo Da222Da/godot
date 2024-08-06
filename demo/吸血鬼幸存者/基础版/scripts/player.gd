@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var speed = 60.0
+@export var hp = 80
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _physics_process(delta: float) -> void:
@@ -19,4 +20,7 @@ func movement():
 	
 	velocity = input_vertor * speed
 	move_and_slide()
-	
+
+func _on_hurt_box_hurt(damage: Variant) -> void:
+	hp -= damage
+	print(hp)
