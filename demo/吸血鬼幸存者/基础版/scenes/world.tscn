@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://8os8rt3guvq5" path="res://Textures/dirt_full_new.png" id="1_xy3yr"]
 [ext_resource type="PackedScene" uid="uid://bhtlednnh3iff" path="res://scenes/player.tscn" id="2_2e607"]
-[ext_resource type="PackedScene" uid="uid://d2sgsl24cjkyy" path="res://scenes/enemys/enemy_kolbold.tscn" id="3_qaomb"]
+[ext_resource type="PackedScene" uid="uid://clu2bwohg4fd6" path="res://scenes/enemys/enemy_spawn.tscn" id="3_olh6e"]
 
 [node name="World" type="Node2D"]
 
@@ -17,5 +17,4 @@ unique_name_in_owner = true
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="EnemyKolbold" parent="." instance=ExtResource("3_qaomb")]
-position = Vector2(192, -48)
+[node name="EnemySpawn" parent="." instance=ExtResource("3_olh6e")]

@@ -1,7 +1,9 @@
-res://scenes/enemys/enemy_spawn.tscn
-res://scripts/enemy/spawn_info.gd
-res://scenes/areas/hurt_box.tscn
-res://scripts/enemy/enemy_spawn.gd
+res://scenes/world.tscn
 res://scripts/enemy/EnemySpawnInfo.gd
-res://scenes/player.tscn
 res://scenes/enemys/enemy_kolbold.tscn
+res://scenes/player.tscn
+res://scenes/areas/hit_box.tscn
+res://scenes/areas/hurt_box.tscn
+res://scenes/enemys/enemy_spawn.tscn
+res://scripts/enemy/enemy_spawn.gd
+res://scripts/enemy-kolbold.gd

@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var movement_speed = 50.0
 @export var hp = 10
-@onready var player: CharacterBody2D = %Player
+@onready var player: CharacterBody2D = get_tree().get_first_node_in_group("player")
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _physics_process(delta: float) -> void:
