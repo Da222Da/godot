@@ -25,3 +25,4 @@ https://www.youtube.com/@BrannoDev/featured
 		- 添加伤害检测框 Hurtbox，设置物理层为 3
 		- 添加攻击检测框 Hitbox，设置物理层为 2
 5. 敌人生成器 EnemySpawn
+6. 创建冰矛技能 IceSpear

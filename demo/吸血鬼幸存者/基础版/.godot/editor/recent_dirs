@@ -1,3 +1,5 @@
+res://scripts/player/attack
+res://scenes/player
 res://scripts/enemy
 res://scenes/enemys
 res://scenes/areas

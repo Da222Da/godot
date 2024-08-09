@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bclwbdnomutf"]
+
+[ext_resource type="Texture2D" uid="uid://cj0vu6ep8ujw5" path="res://Textures/Items/Weapons/ice_spear.png" id="1_8bqm3"]
+[ext_resource type="Script" path="res://scripts/player/attack/ice_spear.gd" id="1_cmreq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2r01a"]
+size = Vector2(32.5269, 7.07107)
+
+[node name="IceSpear" type="Area2D" groups=["attack"]]
+top_level = true
+script = ExtResource("1_cmreq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8bqm3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+position = Vector2(0.5, -0.5)
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_2r01a")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 8.0
+
+[node name="SoundPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

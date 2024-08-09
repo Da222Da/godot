@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bm1hdgh46icnd"]
 
 [ext_resource type="Texture2D" uid="uid://8os8rt3guvq5" path="res://Textures/dirt_full_new.png" id="1_xy3yr"]
-[ext_resource type="PackedScene" uid="uid://bhtlednnh3iff" path="res://scenes/player.tscn" id="2_2e607"]
+[ext_resource type="PackedScene" uid="uid://bhtlednnh3iff" path="res://scenes/player/player.tscn" id="2_2e607"]
 [ext_resource type="PackedScene" uid="uid://clu2bwohg4fd6" path="res://scenes/enemys/enemy_spawn.tscn" id="3_olh6e"]
 
 [node name="World" type="Node2D"]
@@ -14,7 +14,5 @@ region_rect = Rect2(0, 0, 4000, 4000)
 
 [node name="Player" parent="." instance=ExtResource("2_2e607")]
 unique_name_in_owner = true
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="EnemySpawn" parent="." instance=ExtResource("3_olh6e")]
