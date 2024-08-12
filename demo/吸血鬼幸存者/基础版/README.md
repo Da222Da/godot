@@ -26,3 +26,7 @@ https://www.youtube.com/@BrannoDev/featured
 		- 添加攻击检测框 Hitbox，设置物理层为 2
 5. 敌人生成器 EnemySpawn
 6. 创建冰矛技能 IceSpear
+7. 敌人优化
+	- 实现敌人击退效果
+	- 敌人被击中时的音效
+	- 敌人的死亡动画
