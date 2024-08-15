@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://d4et2ug17uub8"]
+
+[ext_resource type="Texture2D" uid="uid://cuvdgtv1eb3vm" path="res://assets/enemies/flying creature/fly_anim_spritesheet.png" id="1_jdb7x"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_lrv4q"]
+[ext_resource type="PackedScene" uid="uid://dfhiphc0ghtyh" path="res://scenes/hitbox and hurtbox/hurtbox.tscn" id="2_fjtuu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73g5j"]
+atlas = ExtResource("1_jdb7x")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gef5o"]
+atlas = ExtResource("1_jdb7x")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oarjn"]
+atlas = ExtResource("1_jdb7x")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7st84"]
+atlas = ExtResource("1_jdb7x")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r37h4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73g5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gef5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oarjn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7st84")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oqh78"]
+radius = 3.16228
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o3qhy"]
+radius = 3.0
+height = 8.0
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_lrv4q")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -4)
+sprite_frames = SubResource("SpriteFrames_r37h4")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.0264247
+offset = Vector2(0, -5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_oqh78")
+
+[node name="Hurtbox" parent="." instance=ExtResource("2_fjtuu")]
+position = Vector2(0, -9)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+shape = SubResource("CapsuleShape2D_o3qhy")
+
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+
+[editable path="Hurtbox"]
