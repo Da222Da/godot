@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://d4et2ug17uub8"]
+[gd_scene load_steps=14 format=3 uid="uid://d4et2ug17uub8"]
 
 [ext_resource type="Texture2D" uid="uid://cuvdgtv1eb3vm" path="res://assets/enemies/flying creature/fly_anim_spritesheet.png" id="1_jdb7x"]
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_lrv4q"]
 [ext_resource type="PackedScene" uid="uid://dfhiphc0ghtyh" path="res://scenes/hitbox and hurtbox/hurtbox.tscn" id="2_fjtuu"]
+[ext_resource type="PackedScene" uid="uid://crgu07jko38gt" path="res://scenes/stats.tscn" id="4_0r6ak"]
+[ext_resource type="PackedScene" uid="uid://dbb3sfgs8trj" path="res://scenes/enemy/play_detection_zone.tscn" id="5_js11v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_73g5j"]
 atlas = ExtResource("1_jdb7x")
@@ -47,7 +49,10 @@ radius = 3.16228
 radius = 3.0
 height = 8.0
 
-[node name="Enemy" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_lpske"]
+radius = 56.8858
+
+[node name="Bat" type="CharacterBody2D"]
 collision_layer = 16
 collision_mask = 3
 script = ExtResource("1_lrv4q")
@@ -71,6 +76,17 @@ collision_mask = 4
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 shape = SubResource("CapsuleShape2D_o3qhy")
 
+[node name="Stats" parent="." instance=ExtResource("4_0r6ak")]
+max_health = 6
+
+[node name="PlayDetectionZone" parent="." instance=ExtResource("5_js11v")]
+
+[node name="CollisionShape2D" parent="PlayDetectionZone" index="0"]
+shape = SubResource("CircleShape2D_lpske")
+debug_color = Color(0.886275, 0.313726, 0.278431, 0.419608)
+
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="no_health" from="Stats" to="." method="_on_stats_no_health"]
 
 [editable path="Hurtbox"]
+[editable path="PlayDetectionZone"]
