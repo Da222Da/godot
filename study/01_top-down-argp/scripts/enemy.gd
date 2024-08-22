@@ -9,6 +9,7 @@ var EnemyDeathEffect = preload("res://scenes/effects/death_effect.tscn")
 @onready var stats: Node2D = $Stats
 @onready var play_detection_zone: Area2D = $PlayDetectionZone
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
+@onready var hurtbox: Area2D = $Hurtbox
 
 
 enum {
@@ -48,8 +49,9 @@ func _on_hurtbox_area_entered(area: Area2D) -> void:
 	
 	# 击退向量
 	if area.knocknack_unit_vector:
-		#
 		velocity = area.knocknack_unit_vector * knocknack_force
+	
+	hurtbox.create_hit_effect()
 
 
 func _on_stats_no_health() -> void:

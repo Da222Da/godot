@@ -14,6 +14,10 @@ config/name="Demo"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
+[autoload]
+
+PlayerStats="*res://scenes/stats/player_stats.tscn"
+
 [display]
 
 window/size/viewport_width=384
@@ -58,9 +62,11 @@ attack={
 
 2d_physics/layer_1="World"
 2d_physics/layer_2="Player"
-2d_physics/layer_3="Hitbox"
-2d_physics/layer_4="Hurtbox"
+2d_physics/layer_3="PlayerHurtbox"
+2d_physics/layer_4="EnemyHurtbox"
 2d_physics/layer_5="Enemy"
+2d_physics/layer_6="PlayerHitbox"
+2d_physics/layer_7="EnemyHitbox"
 
 [rendering]
 

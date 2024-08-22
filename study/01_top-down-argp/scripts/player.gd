@@ -15,6 +15,7 @@ var state = IDLE
 @onready var animation_tree: AnimationTree = $AnimationTree # 引用动画树
 @onready var animation_State = animation_tree.get("parameters/playback") # 关联动画树中状态机
 @onready var sword_hitbox: Area2D = $HitboxMarker/SwordHitbox
+@onready var hurtbox: Area2D = $Hurtbox
 
 # 记录混合位置
 # 在闲置时，记录最后一个位置朝向；在移动时，改变。
@@ -33,6 +34,12 @@ var animTree_state_keys = [
 	"Walk",
 	"Attack"
 ]
+
+# 全局变量
+var stats = PlayerStats
+
+func _ready() -> void:
+	stats.connect("no_health", queue_free)
 
 func _physics_process(delta: float) -> void:
 	# 获取输入向量
@@ -81,3 +88,9 @@ func apply_friction(delta) -> void:
 # 处理攻击动画结束
 func attack_animation_finished():
 	state = IDLE
+
+# 监听玩家受伤
+func _on_hurtbox_area_entered(area: Area2D) -> void:
+	stats.health -= 1
+	hurtbox.start_invincibility(3)
+	hurtbox.create_hit_effect()
