@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dcsrkbkpguyu5"]
+[gd_scene load_steps=11 format=3 uid="uid://dcsrkbkpguyu5"]
 
 [ext_resource type="Texture2D" uid="uid://di30phdlqv635" path="res://assets/world/level_1/grass.png" id="1_3xj0p"]
 [ext_resource type="PackedScene" uid="uid://ckjru7nlgh3pu" path="res://scenes/player.tscn" id="1_andpr"]
 [ext_resource type="Texture2D" uid="uid://bs4ugevcvtafy" path="res://assets/world/level_1/plains.png" id="2_0qyg8"]
 [ext_resource type="Texture2D" uid="uid://dr4m76yjk2t6k" path="res://assets/world/level_1/objects.png" id="3_vkkve"]
 [ext_resource type="PackedScene" uid="uid://d4et2ug17uub8" path="res://scenes/enemy/bat.tscn" id="5_5lo5n"]
+[ext_resource type="PackedScene" uid="uid://xerank1u5ufi" path="res://scenes/ui/health_ui.tscn" id="6_jjc4u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7c8pq"]
 texture = ExtResource("1_3xj0p")
@@ -893,8 +894,25 @@ layer_2/name = "ysort"
 layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(262154, 2, 0, 524290, 2, 5, 524293, 2, 5, 65542, 655362, 7, 720909, 655362, 7, 589849, 655362, 7, 65546, 393218, 7, 589833, 2, 1, 655373, 2, 1, 589843, 2, 1, 131087, 2, 1, 65557, 2, 1, 655377, 327682, 0, 23, 393218, 7, 25, 393218, 7, -65508, 655362, 7, 65564, 655362, 7, 65548, 393218, 7)
 
-[node name="Player" parent="." instance=ExtResource("1_andpr")]
-position = Vector2(67, 104)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-239, 125)
 
-[node name="Enemy" parent="." instance=ExtResource("5_5lo5n")]
-position = Vector2(225, 104)
+[node name="Player" parent="." instance=ExtResource("1_andpr")]
+position = Vector2(-239, 125)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Enemy" type="Node" parent="."]
+
+[node name="Bat" parent="Enemy" instance=ExtResource("5_5lo5n")]
+position = Vector2(-125, 184)
+
+[node name="Bat2" parent="Enemy" instance=ExtResource("5_5lo5n")]
+position = Vector2(-182, 113)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HealthUI" parent="UI" instance=ExtResource("6_jjc4u")]
+offset_right = 83.0
+offset_bottom = 20.0

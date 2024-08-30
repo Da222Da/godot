@@ -1,0 +1,103 @@
+[gd_scene load_steps=8 format=3 uid="uid://nrhng6u636uw"]
+
+[ext_resource type="Script" path="res://scenes/ui/health_bar.gd" id="1_4uf6c"]
+[ext_resource type="Texture2D" uid="uid://d2q0je7xh44fi" path="res://assets/HUD/Base-01.png" id="1_ktlxq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ucmr"]
+atlas = ExtResource("1_ktlxq")
+region = Rect2(307, 21, 58, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2bs5"]
+atlas = ExtResource("1_ktlxq")
+region = Rect2(308, 86, 56, 4)
+
+[sub_resource type="Animation" id="Animation_x6yuq"]
+resource_name = "Hurt"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(18, -18), Vector2(18, -26)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.913725, 0, 0, 1), Color(0.913725, 0, 0, 1), Color(0.913725, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nmk3x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(18, -18)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.913725, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oy63k"]
+_data = {
+"Hurt": SubResource("Animation_x6yuq"),
+"RESET": SubResource("Animation_nmk3x")
+}
+
+[node name="HealthBar" type="Node2D"]
+script = ExtResource("1_4uf6c")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_right = 58.0
+offset_bottom = 3.0
+grow_vertical = 2
+max_value = 1.0
+step = 0.0
+value = 1.0
+texture_over = SubResource("AtlasTexture_5ucmr")
+texture_progress = SubResource("AtlasTexture_d2bs5")
+texture_progress_offset = Vector2(1, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 18.0
+offset_top = -18.0
+offset_right = 37.0
+offset_bottom = 5.0
+theme_override_colors/font_color = Color(0.913725, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_oy63k")
+}

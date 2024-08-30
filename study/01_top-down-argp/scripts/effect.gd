@@ -8,3 +8,5 @@ func _ready() -> void:
 	
 func on_animation_finished():
 	queue_free()
+
+	

@@ -29,4 +29,4 @@ https://www.youtube.com/@BrannoDev/featured
 7. 敌人优化
 	- 实现敌人击退效果
 	- 敌人被击中时的音效
-	- 敌人的死亡动画
+	- 敌人的死亡动画 

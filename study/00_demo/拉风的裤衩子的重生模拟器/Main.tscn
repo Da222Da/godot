@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cn1ieewvy6vem"]
+
+[node name="Loading" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 268.0
+offset_right = 377.0
+offset_bottom = 351.0
+text = "按钮"

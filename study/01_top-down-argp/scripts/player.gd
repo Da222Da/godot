@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var Accelerated = 300 # 加速度
-@export var Max_Speed = 200.0 # 最大速度
+@export var Max_Speed = 80.0 # 最大速度
 @export var Friction = 500 # 摩擦力
 
 enum {
@@ -91,6 +91,6 @@ func attack_animation_finished():
 
 # 监听玩家受伤
 func _on_hurtbox_area_entered(area: Area2D) -> void:
-	stats.health -= 1
-	hurtbox.start_invincibility(3)
+	stats.health -= area.damage
+	hurtbox.start_invincibility(0.5)
 	hurtbox.create_hit_effect()
