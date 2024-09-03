@@ -11,5 +11,3 @@ signal health_change(value)
 		emit_signal("health_change", health)
 		if val <= 0:
 			emit_signal("no_health")
-
-

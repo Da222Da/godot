@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://b37g4acymnojf"]
+[gd_scene load_steps=15 format=3 uid="uid://b37g4acymnojf"]
 
 [ext_resource type="Texture2D" uid="uid://cwy5itfh8p0hx" path="res://assets/effects/EnemyDeathEffect.png" id="1_hx50g"]
 [ext_resource type="Script" path="res://scripts/effect.gd" id="2_rrlrc"]
+[ext_resource type="AudioStream" uid="uid://drrxynu4lcodd" path="res://assets/audio/小怪死亡-YS070515.wav" id="3_mm6us"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tng6f"]
 atlas = ExtResource("1_hx50g")
@@ -87,3 +88,7 @@ animation = &"effect"
 autoplay = "effect"
 offset = Vector2(0, -9)
 script = ExtResource("2_rrlrc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mm6us")
+autoplay = true

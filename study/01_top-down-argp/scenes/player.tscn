@@ -1,8 +1,9 @@
-[gd_scene load_steps=50 format=3 uid="uid://ckjru7nlgh3pu"]
+[gd_scene load_steps=54 format=3 uid="uid://ckjru7nlgh3pu"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ghei0"]
 [ext_resource type="Texture2D" uid="uid://qx4yxpn8ita" path="res://assets/characters/player.png" id="1_wsp5m"]
 [ext_resource type="PackedScene" uid="uid://c4m7vucayybd7" path="res://scenes/hitbox and hurtbox/hitbox.tscn" id="3_d1sy7"]
+[ext_resource type="AudioStream" uid="uid://dkc2r6ignayl5" path="res://assets/audio/宝剑挥舞-YS070516.wav" id="3_oc3sg"]
 [ext_resource type="Script" path="res://scripts/sword_hitbox.gd" id="4_ok5yt"]
 [ext_resource type="PackedScene" uid="uid://dfhiphc0ghtyh" path="res://scenes/hitbox and hurtbox/hurtbox.tscn" id="5_txvi7"]
 
@@ -78,6 +79,21 @@ tracks/3/keys = {
 "update": 1,
 "values": [false, true]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.153495,
+"start_offset": 0.0604677,
+"stream": ExtResource("3_oc3sg")
+}],
+"times": PackedFloat32Array(0.1)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_27lqj"]
 resource_name = "up_idle"
@@ -178,6 +194,21 @@ tracks/4/keys = {
 "update": 1,
 "values": [false, true]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AudioStreamPlayer")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.200008,
+"start_offset": 0.0,
+"stream": ExtResource("3_oc3sg")
+}],
+"times": PackedFloat32Array(0.1)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_bymvp"]
 resource_name = "left_idle"
@@ -302,6 +333,21 @@ tracks/4/keys = {
 "update": 1,
 "values": [false, true]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AudioStreamPlayer")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.200008,
+"start_offset": 0.0,
+"stream": ExtResource("3_oc3sg")
+}],
+"times": PackedFloat32Array(0.1)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_w2i0e"]
 resource_name = "right_idle"
@@ -414,6 +460,21 @@ tracks/3/keys = {
 "update": 1,
 "values": [false, true]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("3_oc3sg")
+}],
+"times": PackedFloat32Array(0.1)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_4d1vf"]
 resource_name = "down_idle"
@@ -597,6 +658,22 @@ height = 22.0
 radius = 4.0
 height = 12.0
 
+[sub_resource type="Animation" id="Animation_70e7v"]
+resource_name = "start"
+length = 0.2
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_4gwdb"]
+resource_name = "stop"
+length = 0.1
+step = 0.1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tt8kw"]
+_data = {
+"start": SubResource("Animation_70e7v"),
+"stop": SubResource("Animation_4gwdb")
+}
+
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_ghei0")
@@ -606,7 +683,6 @@ position = Vector2(-1, -18)
 texture = ExtResource("1_wsp5m")
 hframes = 6
 vframes = 10
-frame = 1
 region_rect = Rect2(0, 208, 288, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -621,9 +697,6 @@ libraries = {
 autoplay = "idle"
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_3u38i")
-}
 tree_root = SubResource("AnimationNodeStateMachine_aldyy")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Attack/BlendSpace2D/blend_position = Vector2(-0.00257951, -0.0056994)
@@ -646,7 +719,6 @@ damage = 3
 [node name="CollisionShape2D" parent="HitboxMarker/SwordHitbox" index="0"]
 position = Vector2(11, 0)
 shape = SubResource("CapsuleShape2D_2xrfa")
-disabled = true
 
 [node name="Hurtbox" parent="." instance=ExtResource("5_txvi7")]
 collision_layer = 4
@@ -655,6 +727,13 @@ collision_mask = 64
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_476un")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="BlinkAnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tt8kw")
+}
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
 
