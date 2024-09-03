@@ -1,8 +1,8 @@
-res://scenes/world.tscn
+res://scenes/enemys/enemy_spawn.tscn
 res://scripts/enemy/EnemySpawnInfo.gd
+res://scenes/world.tscn
 res://scenes/enemys/enemy_kolbold.tscn
 res://scenes/player/player.tscn
 res://scenes/areas/hit_box.tscn
 res://scenes/areas/hurt_box.tscn
-res://scenes/enemys/enemy_spawn.tscn
 res://scenes/player/attack/ice_spear.tscn
