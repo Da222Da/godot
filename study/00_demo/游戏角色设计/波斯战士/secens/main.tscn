@@ -468,6 +468,5 @@ position = Vector2(202, 645)
 scale = Vector2(4, 4)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-offset = Vector2(0, 25)
 limit_top = 0
 limit_bottom = 0
