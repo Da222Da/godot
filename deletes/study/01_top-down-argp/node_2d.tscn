@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxol51uj8pm66"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_2pk3t"]
+[ext_resource type="Texture2D" uid="uid://di30phdlqv635" path="res://assets/world/level_1/grass.png" id="2_r12ea"]
+
+[node name="Buttons" type="Node2D"]
+script = ExtResource("1_2pk3t")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = 30.0
+offset_right = 68.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(23, 18)
+scale = Vector2(2.8125, 2.375)
+texture = ExtResource("2_r12ea")
+
+[node name="Button2" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 107.0
+offset_top = 28.0
+offset_right = 202.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "test button"
