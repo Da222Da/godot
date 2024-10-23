@@ -2,15 +2,12 @@ extends CharacterBody2D
 
 var gravity := ProjectSettings.get("physics/2d/default_gravity") as float # 重力加速度
 var move_speed = 150.0 # 移动速度
-var jump_speed = -300 # 跳跃力
+var jump_speed = -400 # 跳跃力
 var direction = Vector2.ZERO # 方向
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _process(delta: float) -> void:
-	pass
-
-func _physics_process(delta: float) -> void:
 	direction = Input.get_axis("left", "right")
 	velocity.x = move_speed * direction
 	velocity.y += gravity * delta
@@ -19,6 +16,9 @@ func _physics_process(delta: float) -> void:
 	set_anim()
 	set_flip()
 	
+	
+
+func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 # 设置跳跃
