@@ -1,10 +1,12 @@
 class_name StateMachine extends Node
 
+
+
 # 重点
 # 记录当前所处的状态
 var current_state: int = -1:
 	set(v):
-		owner.transition_state(current_state, v) # 将状态变化通知出去
+		owner.handle_change_state(current_state, v) # 将状态变化通知出去
 		current_state = v
 
 # 设置状态机的默认状态
@@ -16,9 +18,9 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	# 确认当前处于什么状态
 	while true:
-		var next = owner.get_next_state(current_state) as int # get_next_state 当前状态要迁移到那个状态
-		if current_state == next:
+		var new_state = owner.change_state(current_state) as int # get_next_state 当前状态要迁移到那个状态
+		if current_state == new_state:
 			break; # 状态不需要发生变化， break
-		current_state = next
+		current_state = new_state
 		
 	owner.handle_physics_process(current_state, delta) # handle_physics_process 执行 _physics_process
