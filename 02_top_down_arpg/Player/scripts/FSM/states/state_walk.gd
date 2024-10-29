@@ -1,7 +1,7 @@
 class_name StateWalk extends State
 
 @export var move_speed := 150.0
-@onready var idle: StateIdle = $StateMachine/Idle
+@onready var idle: StateIdle = $"../Idle"
 
 # 当玩家进入该状态时，执行
 func Enter() -> void:
@@ -23,7 +23,7 @@ func Process(_delta) -> State:
 		State.player.UpdateAnimation("walk")
 	
 	return null
-#
+
 # 当状态发生改变时，做一些事情，改变一下游戏的物理过程
 func PhysicsProcess(_delta) -> State:
 	return null

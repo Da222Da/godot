@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://be2kbflskh1np" path="res://Player/sprites/PlayerSprite02.png" id="1_egk68"]
 [ext_resource type="Script" path="res://Player/scripts/player.gd" id="1_r0l3g"]
 [ext_resource type="Script" path="res://Player/scripts/FSM/state_machine.gd" id="3_y871s"]
-[ext_resource type="Script" path="res://Player/scripts/FSM/state_idle.gd" id="4_qegm2"]
-[ext_resource type="Script" path="res://Player/scripts/FSM/state_walk.gd" id="5_armju"]
+[ext_resource type="Script" path="res://Player/scripts/FSM/states/state_idle.gd" id="4_qegm2"]
+[ext_resource type="Script" path="res://Player/scripts/FSM/states/state_walk.gd" id="5_armju"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ihf1s"]
 

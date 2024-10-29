@@ -10,9 +10,11 @@ var toward = Vector2.DOWN # 玩家朝向
 func _ready() -> void:
 	state_machine.Initialize(self)
 
+@warning_ignore("unused_parameter")
 func _process(delta: float) -> void:
 	direction = Input.get_vector("left", "right", "up", "down")
 	
+@warning_ignore("unused_parameter")
 func _physics_process(delta: float) -> void:
 	#velocity = direction * move_speed
 	#

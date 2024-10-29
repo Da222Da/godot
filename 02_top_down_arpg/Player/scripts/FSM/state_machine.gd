@@ -1,5 +1,4 @@
 # StateMachine 状态机： 用于跟踪状态的变化
-
 class_name StateMachine extends Node
 
 var states: Array[State] # 状态组
@@ -7,7 +6,7 @@ var prev_state: State # 上一个状态
 var current_state: State # 当前状态
 
 func _ready() -> void:
-	process_mode = Node.PROCESS_MODE_DISABLED
+	process_mode = Node.PROCESS_MODE_DISABLED # 不处理该节点
 
 func _process(delta: float) -> void:
 	changeState(current_state.Process(delta))
@@ -36,7 +35,7 @@ func Initialize( _player: Player ) -> void:
 		states[0].player = _player
 		changeState(states[0])
 		
-		process_mode = Node.PROCESS_MODE_INHERIT
+		process_mode = Node.PROCESS_MODE_INHERIT # 处理该节点
 
 # 当状态改变时，做一些事情
 func changeState(new_state) -> void:
