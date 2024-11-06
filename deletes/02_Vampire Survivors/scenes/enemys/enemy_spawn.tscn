@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://clu2bwohg4fd6"]
+
+[ext_resource type="Script" path="res://scripts/enemy/enemy_spawn.gd" id="1_g0ida"]
+[ext_resource type="PackedScene" uid="uid://d2sgsl24cjkyy" path="res://scenes/enemys/enemy_kolbold.tscn" id="2_lnqqj"]
+[ext_resource type="Script" path="res://scripts/enemy/EnemySpawnInfo.gd" id="2_p4caw"]
+
+[sub_resource type="Resource" id="Resource_74n0m"]
+script = ExtResource("2_p4caw")
+time_start = 0
+time_end = 60
+enemy = ExtResource("2_lnqqj")
+enemy_number = 1
+enemy_spawn_delay = 1
+
+[node name="EnemySpawn" type="Node2D"]
+script = ExtResource("1_g0ida")
+enemy_spawns = Array[ExtResource("2_p4caw")]([SubResource("Resource_74n0m")])
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

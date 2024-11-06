@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjkxxspluuwyt"]
+
+[ext_resource type="PackedScene" uid="uid://v6jtvsd44rgg" path="res://player/player.tscn" id="1_dyr1y"]
+[ext_resource type="PackedScene" uid="uid://bi0hfjyheii88" path="res://tilemap/Grass.tscn" id="2_nun26"]
+
+[node name="World" type="Node2D"]
+
+[node name="Grass" parent="." instance=ExtResource("2_nun26")]
+
+[node name="Player" parent="." instance=ExtResource("1_dyr1y")]
+position = Vector2(269, 184)

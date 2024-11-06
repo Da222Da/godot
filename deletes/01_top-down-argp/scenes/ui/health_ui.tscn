@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://xerank1u5ufi"]
+
+[ext_resource type="Script" path="res://scripts/health_ui.gd" id="1_4blob"]
+[ext_resource type="Texture2D" uid="uid://d2q0je7xh44fi" path="res://assets/HUD/Base-01.png" id="2_vexm1"]
+[ext_resource type="Texture2D" uid="uid://qx4yxpn8ita" path="res://assets/characters/player.png" id="3_vcjrf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kg3g6"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+texture = ExtResource("2_vexm1")
+region_rect = Rect2(321, 202, 30, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_huntx"]
+atlas = ExtResource("3_vcjrf")
+region = Rect2(65, 22, 15, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3n3ye"]
+atlas = ExtResource("2_vexm1")
+region = Rect2(307, 21, 58, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2q3wl"]
+atlas = ExtResource("2_vexm1")
+region = Rect2(308, 118, 56, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ro6d"]
+atlas = ExtResource("2_vexm1")
+region = Rect2(305, 84, 59, 8)
+
+[node name="HealthUI" type="HBoxContainer"]
+offset_right = 83.0
+offset_bottom = 20.0
+script = ExtResource("1_4blob")
+
+[node name="Headbox" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_kg3g6")
+
+[node name="Head" type="TextureRect" parent="Headbox"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_huntx")
+stretch_mode = 5
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.0
+value = 1.0
+texture_over = SubResource("AtlasTexture_3n3ye")
+texture_progress = SubResource("AtlasTexture_2q3wl")
+texture_progress_offset = Vector2(1, 1)
+
+[node name="HealthBarRed" type="TextureProgressBar" parent="HealthBar"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.5
+offset_top = -1.0
+offset_right = -0.5
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 1.0
+texture_progress = SubResource("AtlasTexture_4ro6d")

@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://dqtcxo50vchuy"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_h7pat"]
+[ext_resource type="Texture2D" uid="uid://dysisdumaxes0" path="res://assets/enemy/Skeleton/Walk.png" id="1_oaum4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_upo7f"]
+atlas = ExtResource("1_oaum4")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4uf4c"]
+atlas = ExtResource("1_oaum4")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pma77"]
+atlas = ExtResource("1_oaum4")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xir2y"]
+atlas = ExtResource("1_oaum4")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_85odq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_upo7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4uf4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pma77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xir2y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0u11u"]
+radius = 6.0
+height = 26.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dgbl1"]
+radius = 27.2029
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_h7pat")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -29)
+sprite_frames = SubResource("SpriteFrames_85odq")
+autoplay = "default"
+frame_progress = 0.187566
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, -32)
+shape = SubResource("CapsuleShape2D_0u11u")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+modulate = Color(1, 0.207843, 1, 1)
+position = Vector2(4, -32)
+shape = SubResource("CircleShape2D_dgbl1")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

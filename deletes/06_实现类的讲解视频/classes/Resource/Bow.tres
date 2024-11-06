@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://d0r02ote1ykyp"]
+
+[ext_resource type="Texture2D" uid="uid://diplj0o554ky3" path="res://player_02/imgs/Sprite.png" id="1_weho3"]
+[ext_resource type="Script" path="res://player_02/scripts/Item.gd" id="2_7u46d"]
+
+[resource]
+script = ExtResource("2_7u46d")
+name = "bow"
+texture = ExtResource("1_weho3")
+icon = ExtResource("1_weho3")
+damage = 40.0
+type = "Range"
+animation = "bow"
+charge_animation = "bow"
+delay = 0.0
+projectile = 0

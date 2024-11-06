@@ -1,0 +1,217 @@
+[gd_scene load_steps=24 format=3 uid="uid://cfygjb7cb3nl3"]
+
+[ext_resource type="Texture2D" uid="uid://ciiv2l0732e5x" path="res://assets/spriteSheet.png" id="1_dd0xp"]
+[ext_resource type="Texture2D" uid="uid://diplj0o554ky3" path="res://player_02/imgs/Sprite.png" id="2_8nrpc"]
+
+[sub_resource type="Animation" id="Animation_jda67"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_tcs6f"]
+resource_name = "idle"
+loop_mode = 1
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25, 0.333333, 0.416667, 0.5, 0.583333, 0.666667, 0.75, 0.833333, 0.916667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_jvq6u"]
+resource_name = "run"
+length = 1.00001
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+}
+
+[sub_resource type="Animation" id="Animation_akuac"]
+resource_name = "charging_bow"
+length = 1.00001
+step = 0.0666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6bfxe"]
+_data = {
+"RESET": SubResource("Animation_jda67"),
+"bow": SubResource("Animation_akuac"),
+"idle": SubResource("Animation_tcs6f"),
+"run": SubResource("Animation_jvq6u")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be3wu"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(0, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y07h6"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(288, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iq38b"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(576, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2kdg"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(864, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnuum"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(1152, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hekrf"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(1440, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25lns"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(1728, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68q6g"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(2016, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86f0y"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(2304, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oide5"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(2592, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnll4"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(2880, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx6j6"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(3168, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xlewi"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(3456, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_df426"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(3744, 1408, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnall"]
+atlas = ExtResource("1_dd0xp")
+region = Rect2(4032, 1408, 288, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nl01q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be3wu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y07h6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iq38b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2kdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnuum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hekrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25lns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68q6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86f0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oide5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnll4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx6j6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xlewi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_df426")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnall")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -65)
+texture = ExtResource("1_dd0xp")
+hframes = 22
+vframes = 17
+
+[node name="Weapon" type="Sprite2D" parent="."]
+texture = ExtResource("2_8nrpc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6bfxe")
+}
+
+[node name="AnimationWeapon" type="AnimationPlayer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_nl01q")
+animation = &"new_animation"
+frame = 1
+frame_progress = 0.264751

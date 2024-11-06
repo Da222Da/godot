@@ -1,0 +1,99 @@
+[gd_scene load_steps=11 format=3 uid="uid://cco8ixpem5hhe"]
+
+[ext_resource type="Texture2D" uid="uid://pwdfa7ahotjj" path="res://player_02/imgs/SpriteSheet.png" id="1_cq70r"]
+[ext_resource type="Script" path="res://player_02/player_02.gd" id="1_waa2u"]
+[ext_resource type="Texture2D" uid="uid://diplj0o554ky3" path="res://player_02/imgs/Sprite.png" id="2_3vvjq"]
+[ext_resource type="Resource" uid="uid://d0r02ote1ykyp" path="res://Resource/Bow.tres" id="2_dtprd"]
+[ext_resource type="PackedScene" uid="uid://crsf0lshkepnq" path="res://player_02/projectile.tscn" id="2_ekykp"]
+
+[sub_resource type="Animation" id="Animation_ffwan"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_pd18l"]
+resource_name = "bow"
+length = 0.333367
+step = 1.0
+
+[sub_resource type="Animation" id="Animation_oqfme"]
+resource_name = "idle"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_t1w34"]
+resource_name = "run"
+length = 1.00003
+loop_mode = 1
+step = 0.333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.333333, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [11, 15, 19, 23]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2g5t0"]
+_data = {
+"RESET": SubResource("Animation_ffwan"),
+"bow": SubResource("Animation_pd18l"),
+"idle": SubResource("Animation_oqfme"),
+"run": SubResource("Animation_t1w34")
+}
+
+[node name="Player02" type="CharacterBody2D"]
+script = ExtResource("1_waa2u")
+projectile_node = ExtResource("2_ekykp")
+current_item = ExtResource("2_dtprd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cq70r")
+hframes = 4
+vframes = 7
+
+[node name="Weapon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(12, 1)
+rotation = -1.5708
+texture = ExtResource("2_3vvjq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2g5t0")
+}
+
+[node name="Charge" type="ProgressBar" parent="."]
+visible = false
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = -12.0
+max_value = 1.25
+show_percentage = false
