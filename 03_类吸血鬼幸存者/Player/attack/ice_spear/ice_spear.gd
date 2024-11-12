@@ -1,7 +1,7 @@
 extends Area2D
 
 var level = 1
-var hp = 1
+var hp = 2
 var speed = 100
 var damage = 5
 var knockback_amount = 100 # 击退距离
@@ -11,6 +11,8 @@ var target = Vector2.ZERO # 攻击目标
 var angle = Vector2.ZERO # 攻击时，旋转的角度
 
 @onready var player = get_tree().get_first_node_in_group("player")
+
+signal remove_from_array(object)
 
 func _ready() -> void:
 	angle = global_position.direction_to(target)
@@ -30,8 +32,10 @@ func _physics_process(delta: float) -> void:
 func enemy_hit(charge = 1):
 	hp -= charge
 	if hp <= 0:
+		emit_signal("remove_from_array", self) # 从打击数组中移除
 		queue_free()
 
 # 10s 之后，冰矛自动销毁
 func _on_destroy_timer_timeout() -> void:
-	pass # Replace with function body.
+	emit_signal("remove_from_array", self) # 从打击数组中移除
+	queue_free()

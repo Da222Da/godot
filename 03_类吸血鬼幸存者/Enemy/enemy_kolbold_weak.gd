@@ -8,6 +8,11 @@ var knockback_recovery = 3.5 # 击退限制
 @onready var player = get_tree().get_first_node_in_group("player")
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d: Sprite2D = $Sprite2D
+@onready var sound_hit: AudioStreamPlayer2D = $SoundHit
+
+var death_animation = preload("res://VFX/explosion/explosion.tscn")
+
+signal remove_from_array(object)
 
 func _physics_process(delta: float) -> void:
 	knockback = knockback.move_toward(Vector2.ZERO, knockback_recovery)
@@ -43,5 +48,15 @@ func set_filp():
 func _on_hurt_box_hurt(damge: Variant, angle, knockback_amount) -> void:
 	HP -= damge
 	knockback = angle * knockback_amount
-	if HP < 0:
-		queue_free()
+	if HP <= 0:
+		death()
+	else:
+		sound_hit.play() # 播放敌人受到打击的声音
+
+func death():
+	emit_signal("remove_from_array", self) # 从打击数组中移除
+	var enemy_death = death_animation.instantiate()
+	enemy_death.scale = $Sprite2D.scale
+	enemy_death.global_position = global_position
+	get_parent().call_deferred("add_child", enemy_death)
+	queue_free()

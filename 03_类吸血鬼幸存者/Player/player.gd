@@ -3,23 +3,36 @@ extends CharacterBody2D
 var move_speed = 150
 var direction = Vector2.ZERO
 var HP = 100
+var last_movement = Vector2.UP
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 # 冰矛攻击
-const ICE_SPEAR = preload("res://Player/attack/ice_spear.tscn")
+const ICE_SPEAR = preload("res://Player/attack/ice_spear/ice_spear.tscn")
 @onready var ice_spear_timer: Timer = %IceSpearTimer
 @onready var ice_spear_attack_timer: Timer = %IceSpearAttackTimer
 var ice_spear_amount = 0 # 弹夹容量
-var ice_spear_baseamount = 5 # 每次发射次数
+var ice_spear_baseamount = 1 # 每次发射次数
 var ice_spear_attackspeed = 1.5 
 var ice_spear_level = 1 # 冰矛等级
+
+# 龙旋风攻击
+const TORNADO = preload("res://Player/attack/tornado/tornado.tscn")
+@onready var tornado_timer: Timer = $Attack/TornadoTimer
+@onready var tornado_attack_timer: Timer = $Attack/TornadoTimer/TornadoAttackTimer
+var tornado_amount = 0 # 弹夹容量
+var tornado_baseamount = 1 # 每次发射次数
+var tornado_attackspeed = 1.5 
+var tornado_level = 1 # 等级
+
+
 var enemy_close = [] # 追踪靠近的敌人
 
 func _ready() -> void:
 	attack()
 
 
+@warning_ignore("unused_parameter")
 func _physics_process(delta: float) -> void:
 	direction = Input.get_vector("left", "right", "up", "down")
 	set_move()
@@ -30,12 +43,17 @@ func _physics_process(delta: float) -> void:
 func attack():
 	if ice_spear_level > 0:
 		ice_spear_timer.wait_time = ice_spear_attackspeed
-	if ice_spear_timer.is_stopped():
-		ice_spear_timer.start()
+		if ice_spear_timer.is_stopped():
+			ice_spear_timer.start()
+	if tornado_level > 0:
+		tornado_timer.wait_time = tornado_attackspeed
+		if tornado_timer.is_stopped():
+			tornado_timer.start()
 	
 # 动画
 func set_anim():
 	if direction != Vector2.ZERO:
+		last_movement = direction
 		animation_player.play("walk")
 	else:
 		animation_player.play("RESET")
@@ -78,6 +96,24 @@ func _on_ice_spear_attack_timer_timeout() -> void:
 		else:
 			ice_spear_attack_timer.stop()
 	
+func _on_tornado_timer_timeout():
+	tornado_amount += tornado_baseamount
+	tornado_attack_timer.start()
+
+func _on_tornado_attack_timer_timeout():
+	if tornado_amount > 0:
+		var tornado_attack = TORNADO.instantiate()
+		print(tornado_attack)
+		tornado_attack.position = position
+		tornado_attack.last_movement = last_movement
+		tornado_attack.level = tornado_level
+		add_child(tornado_attack)
+		tornado_amount -= 1
+		if tornado_amount > 0:
+			tornado_attack_timer.start()
+		else:
+			tornado_attack_timer.stop()
+
 # 获取随机目标	
 func get_random_target():
 	if enemy_close.size() > 0:
